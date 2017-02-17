@@ -9,6 +9,9 @@
   </head>
 
   <body>
+    <p class="notice"><%= notice %></p>
+       <p class="alert"><%= alert %></p>
+       <%=link_to "管理者ログイン",admin_session_path%>
     <%= yield %>
   </body>
 </html>
