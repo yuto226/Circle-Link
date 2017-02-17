@@ -1,0 +1,11 @@
+<%=form_for(@admin) do |f|%>
+<div>
+<%=f.label :title%>
+<%=f.text_field :title%>
+</div>
+<div>
+  <%=f.label :contents%>
+  <%=f.text_area :contents%>
+</div>
+<%=f.submit%>
+<%end%>

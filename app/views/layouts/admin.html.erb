@@ -12,8 +12,8 @@
     <p class="notice"><%= notice %></p>
        <p class="alert"><%= alert %></p>
        <div id="header">
-       <%=link_to "管理者ログイン",admin_session_path%>
        <%if admin_signed_in?%>
+       <%=link_to "新しい投稿",admins_new_path%>
        <%=link_to "ログアウト",destroy_admin_session_path%>
        <%end%>
      </div>
