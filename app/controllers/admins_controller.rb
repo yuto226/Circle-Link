@@ -1,8 +1,12 @@
 class AdminsController < ApplicationController
 layout'admin'
 def index
+  @index=Article.where(admin_id:current_admin.id)
 end
 
+def show
+  @show=Article.find(params[:id])
+end
   def new
     @admin=Article.new
   end

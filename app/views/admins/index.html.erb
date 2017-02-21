@@ -1,1 +1,22 @@
-<%=current_admin.username%>様
+<div id="home">
+<div id="main">
+<div id="contents">
+  <%=current_admin.username%>様
+
+<div class="new">
+  <p>あなたの投稿</p>
+  <ul>
+  <%@index.each do |s|%>
+  <li>
+  <%=link_to s.title,"/admins/show/#{s.id}"%>
+</li>
+  <%end%>
+</ul>
+</div>
+
+</div>
+<!--end of contents-->
+</div>
+<!--endo of main-->
+</div>
+<!--end of home-->

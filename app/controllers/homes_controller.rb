@@ -5,4 +5,7 @@ class HomesController < ApplicationController
   def show
     @show=Article.find(params[:id])
   end
+  def circle
+
+  end
 end

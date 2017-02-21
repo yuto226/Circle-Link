@@ -2,14 +2,7 @@
 <div id="main">
   <div id="contents">
 <h1>ここは最初のページ</h1>
-<div class="list">
-  <ul>
-    <li>情報一覧</li>
-    <li>サークル一覧</li>
-    <li><%=link_to "Neoニートとは！？",neets_index_path%></li>
-  </ul>
-</div><br>
-
+<%= render 'shared/homes/list' %>
 <div class="new">
   <p>新着情報</p>
   <ul>

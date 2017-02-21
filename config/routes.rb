@@ -1,10 +1,11 @@
 Rails.application.routes.draw do
   get 'neets/index'
-
+  get '/homes/circles/index' => 'homes#circle'
   root 'homes#index'
   resources:homes
   get 'admins/index'
   get 'admins/new'
+  get "admins/show/:id" => 'admins#show'
   post '/articles' => 'admins#create'
   devise_for :admins
   devise_scope :admin do
