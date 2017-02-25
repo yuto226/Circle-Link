@@ -18,5 +18,10 @@
  margin-left: auto;
 }
 #main{
-  margin-left:10px;
+  width: 700px;
+  margin-left:15px;
+}
+
+#hutter{
+margin-left: 10px;
 }
