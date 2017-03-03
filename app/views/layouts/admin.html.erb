@@ -9,10 +9,12 @@
   </head>
 
   <body>
+    <div id="logo_space"><%=image_tag "/images/circle_log.png",:size => "250x72"%></div>
     <p class="notice"><%= notice %></p>
        <p class="alert"><%= alert %></p>
        <div id="header">
        <%if admin_signed_in?%>
+       <%=link_to "HOME",admins_index_path%>
        <%=link_to "新しい投稿",admins_new_path%>
        <%=link_to "ログアウト",destroy_admin_session_path%>
        <%end%>

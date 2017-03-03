@@ -9,14 +9,19 @@
   </head>
 
   <body>
+    <div id="logo_space"><%=image_tag "/images/circle_log.png",:size => "250x72"%></div>
     <p class="notice"><%= notice %></p>
        <p class="alert"><%= alert %></p>
        <div id="header">
-       <%=link_to "管理者ログイン",admin_session_path%>
+         <%=link_to "HOME",homes_path%>
        <%if admin_signed_in?%>
        <%=link_to "ログアウト",destroy_admin_session_path%>
        <%end%>
      </div>
     <%= yield %>
+    <div id="hutter">
+      <%=link_to "管理者ログイン",admin_session_path%>
+      <%=link_to "テスト新規登録",new_admin_registration_path%>
+    </div>
   </body>
 </html>
