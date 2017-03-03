@@ -9,10 +9,10 @@
   </head>
 
   <body>
+    <div id="header">
     <div id="logo_space"><%=image_tag "/images/circle_log.png",:size => "250x72"%></div>
     <p class="notice"><%= notice %></p>
        <p class="alert"><%= alert %></p>
-       <div id="header">
          <%=link_to "HOME",homes_path%>
        <%if admin_signed_in?%>
        <%=link_to "ログアウト",destroy_admin_session_path%>

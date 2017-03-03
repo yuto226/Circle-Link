@@ -12,11 +12,14 @@
  *
  *= require_tree .
  *= require_self
- */#header{
- width:200px;
- position: relative;
- margin-left: auto;
+ */
+ #header{
+   height: auto;
+ width:700px;
+ margin-left: 15px;
+ //margin-left: auto;
 }
+
 #main{
   width: 700px;
   margin-left:15px;

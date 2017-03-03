@@ -6,16 +6,18 @@ class HomesController < ApplicationController
     @show=Article.find(params[:id])
   end
   def circle
-    @msg = Array.new
-    if(request.post?)
-      if params[:r1]
-        for val in params[:r1]
-        @msg = Circle2.where janru:params[:r1]
-      end
-    else
-      @msg='no Check'
+    conditions = {:genre_ids => []}.merge(params[:conditions] || {})
+    @conditions = OpenStruct.new(conditions)
+    puts @conditions
+    # ["0", "1", "0", "2"]という不要な0が入った
+    # 状態になっているため["1", "2"]に整形
+    @conditions.genre_ids.delete("0")
+    relation = Profile.all
+    unless @conditions.genre_ids.blank?#飛んできたidが空じゃなかったら
+
+      relation = relation.where(:genre_id => @conditions.genre_ids)
     end
-  end
+    @msg = relation
 
   end
 end

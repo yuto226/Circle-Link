@@ -2,13 +2,14 @@
 
 
 <%= form_for :conditions,{:method => 'get'} do |f|%>
-<%Profile.all.each do |p|%>
-<%= f.check_box :p_ids,{:name => "conditions[p_ids][]"},
-p.id.to_s%>
-<%=p.id%>
+<%Genre.all.each do |genre|%>
+<%= f.check_box :genre_ids,{:name => "conditions[genre_ids][]"},
+genre.id.to_s%>
+<%=genre.name%>
 <%end%>
-
-<%= f.submit("行け―！") %>
+<div class = "submit">
+<%= f.submit("ジャンル検索") %>
+</div>
 <% end %>
 
 <!--
