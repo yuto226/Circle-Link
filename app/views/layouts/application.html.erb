@@ -9,11 +9,24 @@
   </head>
 
   <body>
-    <div id="logo_space"><%=image_tag "/images/circle_log.png",:size => "250x72"%></div>
+
     <p class="notice"><%= notice %></p>
        <p class="alert"><%= alert %></p>
        <div id="header">
-         <%=link_to "HOME",homes_path%>
+
+         <div class="logo_space"><%=image_tag "/images/circle_log.png",:size => "250x72"%></div>
+         <div class="menu">
+           <ul>
+             <li><%=link_to "情報一覧",homes_path,{:class =>"button"}%></li>
+             <li><%=link_to "サークル一覧",'/homes/circles/index',{:class=>"button"}%></li>
+             <li><%=link_to "Neoニートとは！？",neets_index_path,{:class=>"button"}%></li>
+           </ul>
+         </div><br>
+
+         <div class="home">
+           <%=link_to "HOME",homes_path%>
+         </div>
+
        <%if admin_signed_in?%>
        <%=link_to "ログアウト",destroy_admin_session_path%>
        <%end%>
