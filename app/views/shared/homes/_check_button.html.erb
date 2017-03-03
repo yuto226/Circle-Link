@@ -1,18 +1,14 @@
 ﻿<div class = "check_button">
 
 
-<%= form_tag(controller: "homes", action:"circle") do %>
-<%= check_box_tag("r1[]","スポーツ") %>
-<%= label_tag("check1","スポーツ") %>
-<%= check_box_tag("r1[]","バンド") %>
-<%= label_tag("check1","バンド") %>
-<%= check_box_tag("r1[]","ゲーム") %>
-<%= label_tag("check1","ゲーム") %>
-<%= check_box_tag("r1[]","アウトドア") %>
-<%= label_tag("check1","アウトドア") %>
+<%= form_for :conditions,{:method => 'get'} do |f|%>
+<%Profile.all.each do |p|%>
+<%= f.check_box :p_ids,{:name => "conditions[p_ids][]"},
+p.id.to_s%>
+<%=p.id%>
+<%end%>
 
-
-<%= submit_tag("行け―！") %>
+<%= f.submit("行け―！") %>
 <% end %>
 
 <!--
