@@ -7,5 +7,16 @@ class HomesController < ApplicationController
   end
   def circle
 
+    @msg = Array.new
+    if(request.post?)then
+      if params['r1'] then
+        for val in params['r1']
+        @msg = Circle2.where janru:params['r1']
+      end
+    else
+      @msg='no Check'
+    end
+  end
+
   end
 end

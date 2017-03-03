@@ -1,0 +1,15 @@
+﻿<div class = "after_check">
+<table>
+	<tr>
+	<th>ID</th><th>Name</th><th>Janru</th>
+	</tr>
+	<% @msg.each do |obj| %>
+	<tr>
+	<td><%= obj.id %></td>
+	<td><%= obj.name %></td>
+	<td><%= obj.janru %></td>
+	</tr>
+	<% end %>
+</table>
+
+</div>

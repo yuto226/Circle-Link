@@ -1,0 +1,35 @@
+﻿<div class = "check_button">
+
+
+<%= form_tag(controller: "homes", action:"circle") do %>
+<%= check_box_tag("r1[]","スポーツ") %>
+<%= label_tag("check1","スポーツ") %>
+<%= check_box_tag("r1[]","バンド") %>
+<%= label_tag("check1","バンド") %>
+<%= check_box_tag("r1[]","ゲーム") %>
+<%= label_tag("check1","ゲーム") %>
+<%= check_box_tag("r1[]","アウトドア") %>
+<%= label_tag("check1","アウトドア") %>
+
+
+<%= submit_tag("行け―！") %>
+<% end %>
+
+<!--
+<div>
+<%= form_tag(controller:"homes",action:"circle") do %>
+<%= radio_button_tag("r1","スポーツ") %>
+<%= label_tag("support","スポーツ") %>
+<%= radio_button_tag("r1","バンド") %>
+<%= label_tag("band","バンド") %>
+<%= radio_button_tag("r1","ゲーム") %>
+<%= label_tag("volunteer","ゲーム") %>
+<%= radio_button_tag("r1","アウトドア") %>
+<%= label_tag("study","アウトドア") %>
+<%= submit_tag("行け―！") %>
+<% end %>
+</div>
+
+-->
+
+</div>
