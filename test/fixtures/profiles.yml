@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  prof: MyText
+  num: 
+  place: MyString
+  time: 
+
+two:
+  prof: MyText
+  num: 
+  place: MyString
+  time: 

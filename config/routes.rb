@@ -1,8 +1,9 @@
 Rails.application.routes.draw do
   get 'neets/index'
-  get '/homes/circles/index' => 'homes#circle'
+  get 'homes/circle'
   root 'homes#index'
   resources:homes
+  post '/homes/circles/index'
   get 'admins/index'
   get 'admins/new'
   get "admins/show/:id" => 'admins#show'

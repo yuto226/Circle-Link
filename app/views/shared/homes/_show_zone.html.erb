@@ -1,0 +1,20 @@
+﻿<div class = "after_check">
+	<p>サークル一覧</p>
+<table>
+	<%unless @msg.blank?%>
+	<tr>
+	<th>ID</th><th>Name</th><th>Janru</th>
+	</tr>
+	<% @msg.each do |obj| %>
+	<tr>
+	<td><%= obj.id %></td>
+	<td><%= obj.admin.username %></td>
+	<td><%= obj.genre.name %></td>
+	</tr>
+	<%end%>
+	<%else%>
+	<p>まだ、サークルが登録されていないみたいです。もうしばらくお待ちください。</p>
+	<% end %>
+</table>
+
+</div>
