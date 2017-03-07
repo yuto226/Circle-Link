@@ -6,6 +6,7 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <script type="text/javascript" src="homes.js"></script>
   </head>
 
   <body>
@@ -17,7 +18,7 @@
          <div class="menu">
            <ul>
              <li><%=link_to "情報一覧",homes_path,{:class =>"button"}%></li>
-             <li><%=link_to "サークル一覧",'/homes/circles/index',{:class=>"button"}%></li>
+             <li><%=link_to "サークル一覧",homes_circle_path,{:class=>"button"}%></li>
              <li><%=link_to "Neoニートとは！？",neets_index_path,{:class=>"button"}%></li>
            </ul>
          </div><br>
@@ -26,13 +27,14 @@
            <%=link_to "HOME",homes_path%>
          </div>
      </div>
-     <div id="slider">
-       <h1>ここにスライダー入ります</h1>
-     </div>
     <%= yield %>
     <div id="hutter">
-      <%=link_to "管理者ログイン",admin_session_path%>
-      <%=link_to "テスト新規登録",new_admin_registration_path%>
+
+      <ul class="login">
+        <li><%=link_to "管理者ログイン",admin_session_path%></li>
+        <li><%=link_to "テスト新規登録",new_admin_registration_path%></li>
+      </ul>
+      <div class="logo_space"><%=image_tag "/images/circle_log.png",:size => "200x60"%></div>
     </div>
   </body>
 </html>

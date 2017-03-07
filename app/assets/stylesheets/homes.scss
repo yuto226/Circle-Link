@@ -1,18 +1,41 @@
 // Place all the styles related to the homes controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
 #home .list li{
   margin-right:15px;
-list-style: none;
+  list-style: none;
   float:left;
-
 }
-#home .new li{
+#home li{
+  list-style: none;
+}
+
+#home .slide{
+  text-align:center;
+}
+
+#home h2{
+  font-size: 20px;
+}
+#home .new{
+  float:left;
+}
+#home .topic{
+  border:1px solid gray;
+  margin: 10px;
+  padding-right: 400px;
+}
+#home .link{
+  margin-bottom: 300px;
 }
 
 #home .button {
+  float: left;
+  margin:10px;
 	background-color: #333;
 	color: #fff;
+  background-image: "/images/home1.jpg";
 }
 #home .button:hover {
 	background-color: #59b1eb;
