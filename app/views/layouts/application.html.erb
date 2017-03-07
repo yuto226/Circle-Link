@@ -6,6 +6,7 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <script type="text/javascript" src="homes.js"></script>
   </head>
 
   <body>
@@ -33,8 +34,12 @@
      </div>
     <%= yield %>
     <div id="hutter">
-      <%=link_to "管理者ログイン",admin_session_path%>
-      <%=link_to "テスト新規登録",new_admin_registration_path%>
+
+      <ul class="login">
+        <li><%=link_to "管理者ログイン",admin_session_path%></li>
+        <li><%=link_to "テスト新規登録",new_admin_registration_path%></li>
+      </ul>
+      <div class="logo_space"><%=image_tag "/images/circle_log.png",:size => "200x60"%></div>
     </div>
   </body>
 </html>

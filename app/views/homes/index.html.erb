@@ -1,22 +1,33 @@
 <div id="home">
-<div id="main">
-  <div id="contents">
+
 <h1>ここは最初のページ</h1>
-<%= render 'shared/homes/list' %>
+<!--りすと-->
+<!--<%= render 'shared/homes/list' %>-->
+
+<div class="slide">
+  <div><%=image_tag "/images/home1.jpg",:size => "700x350"%></div>
+  <!--<div><%=image_tag "/images/home2.jpg",:size => "700x350"%></div>-->
+</div>
+
 <div class="new">
-  <p>新着情報</p>
-  <ul>
-  <%@index.each do |s|%>
-  <li>
-  <%=link_to s.title,home_path(s.id)%>
-</li>
-  <%end%>
+<h2>新着情報</h2>
+  <div class="topic">
+    <ul>
+      <%@index.each do |s|%>
+      <li>
+        <%=link_to s.title,home_path(s.id)%>
+      </li>
+      <%end%>
+    </ul>
+  </div>
+</div>
+
+<div class="link">
+<ul>
+  <li><%=link_to "サークル一覧",'/homes/circles/index',{:class=>"button"}%></li>
+  <li><%=link_to "Neoニートとは！？",neets_index_path,{:class=>"button"}%></li>
 </ul>
 </div>
 
-</div>
-<!--end of contents-->
-</div>
-<!--endo of main-->
 </div>
 <!--end of home-->
