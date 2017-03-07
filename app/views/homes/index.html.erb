@@ -1,17 +1,21 @@
 <div id="home">
 <div id="main">
   <div id="contents">
-<h1>ここは最初のページ</h1>
 <%= render 'shared/homes/list' %>
 <div class="new">
   <p>新着情報</p>
-  <ul>
+  <table>
+    <tr>
+      <th>サークル名</th>
+      <th>投稿</th>
+    </tr>
   <%@index.each do |s|%>
-  <li>
-  <%=link_to s.title,home_path(s.id)%>
-</li>
+  <tr>
+  <td><%=s.admin.username%></td>
+  <td><%=link_to s.title,home_path(s.id)%></td>
+</td>
   <%end%>
-</ul>
+</table>
 </div>
 
 </div>
