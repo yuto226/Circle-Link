@@ -10,10 +10,8 @@
   </head>
 
   <body>
-    <p class="notice"><%= notice %></p>
-       <p class="alert"><%= alert %></p>
-       <div id="header">
 
+       <div id="header">
          <div class="logo_space"><%=image_tag "/images/circle_log.png",:size => "250x72"%></div>
          <div class="menu">
            <ul>
@@ -24,7 +22,7 @@
          </div><br>
 
          <div class="home">
-           <%=link_to "HOME",homes_path%>
+           <%=link_to "HOME",root_path%>
          </div>
      </div>
     <%= yield %>

@@ -1,5 +1,5 @@
 <div id="home">
-
+<h1>ここは最初のページです。</h1>
 <div class="slide">
   <div><%=image_tag "/images/home1.jpg",:size => "700x350"%></div>
 </div>
@@ -16,7 +16,6 @@
     <tr>
     <td><%=s.admin.username%></td>
     <td><%=link_to s.title,home_path(s.id)%></td>
-  </td>
     <%end%>
   </table>
   </div>
