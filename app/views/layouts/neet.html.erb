@@ -11,21 +11,7 @@
   <body>
     <p class="notice"><%= notice %></p>
        <p class="alert"><%= alert %></p>
-       <div id="header">
-
-         <div class="logo_space"><%=image_tag "/images/circle_log.png",:size => "250x72"%></div>
-         <div class="menu">
-           <ul>
-             <li><%=link_to "情報一覧",homes_path,{:class =>"button"}%></li>
-             <li><%=link_to "サークル一覧",'/homes/circles/index',{:class=>"button"}%></li>
-             <li><%=link_to "Neoニートとは！？",neets_index_path,{:class=>"button"}%></li>
-           </ul>
-         </div><br>
-
-         <div class="home">
-           <%=link_to "HOME",homes_path%>
-         </div>
-     </div>
+    <%=render 'shared/header'%>
     <%= yield %>
     <div id="hutter">
       <%=link_to "管理者ログイン",admin_session_path%>

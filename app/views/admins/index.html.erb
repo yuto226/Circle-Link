@@ -1,17 +1,24 @@
 <div id="home">
 <div id="main">
 <div id="contents">
-  <%=current_admin.username%>様
+<div class="name_space"><%=current_admin.username%>様</div>
 
 <div class="new">
   <p>あなたの投稿</p>
   <ul>
+    <%if @index.blank?%>
+    <p>まだ投稿がないみたいですね！あと○件投稿できます！</p>
+    <p><i><%=link_to "ここ",admins_new_path%></i>から投稿してみましょう！</p>
+    <%else%>
   <%@index.each do |s|%>
   <li>
   <%=link_to s.title,"/admins/show/#{s.id}"%>
+  <%=link_to "[編集]","/admins/edit_article/#{s.id}"%>
+  <%=link_to "[削除]","/admins/delete_article/#{s.id}", method: :delete, data: {confirm: "本当に削除しますか？\n削除したらこの記事は元には戻せません。"}%>
 </li>
   <%end%>
 </ul>
+<%end%>
 </div>
 
 </div>

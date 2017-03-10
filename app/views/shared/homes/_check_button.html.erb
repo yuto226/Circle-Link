@@ -1,4 +1,4 @@
-﻿<div class = "check_button">
+﻿<div id = "check_button">
 
 
 <%= form_for :conditions,{:method => 'get'} do |f|%>
@@ -11,7 +11,7 @@ genre.id.to_s%>
 <%= f.submit("ジャンル検索") %>
 </div>
 <% end %>
-
+</div>
 <!--
 <div>
 <%= form_tag(controller:"homes",action:"circle") do %>

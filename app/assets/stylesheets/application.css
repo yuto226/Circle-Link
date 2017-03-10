@@ -17,17 +17,19 @@
    width: 1000px;
  }
  #header{
+    height: 80px;
     border-bottom: 1px solid gray;
     margin-left: 15px;
  }
  #header .logo_space {
   float: left;
   padding-right: 20px;
-
 }
+/*
 #header .menu{
   float:left;
-}
+}*/
+
 #header .menu li{
   font-size: 25px;
   float:left;
@@ -55,7 +57,6 @@
 }
 
 #header .home{
- //width:200px;
   width:700px;
  position: relative;
  margin-left: 15px;
@@ -63,36 +64,29 @@
  height: auto;
 }
 
-#slider {
-  background-color: red;
-  height 300px;
-  width 700px;
-  margin-left: 15px;
-}
 #main{
   width: 700px;
   margin-left:15px;
 }
 
 #hutter{
-<<<<<<< HEAD
-margin-left: 15px;
-=======
+  margin-left: 15px;
   border-top:1px solid gray;
-
 }
+
 #hutter .login{
   margin-top:10px;
   padding-left: 70px;
   list-style: none;
 }
+
 #hutter .login li{
   float: left;
   padding:0px 5px;
 
 }
+
 #hutter .logo_space{
   text-align:center;
   margin-top:40px;
->>>>>>> yamaguchi/css
 }

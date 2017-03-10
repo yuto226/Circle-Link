@@ -1,5 +1,4 @@
 <div id="home">
-<h1>ここは最初のページです。</h1>
 <div class="slide">
   <div><%=image_tag "/images/home1.jpg",:size => "700x350"%></div>
 </div>
@@ -11,11 +10,13 @@
       <tr>
         <th>サークル名</th>
         <th>投稿</th>
+        <th>投稿日時</th>
       </tr>
     <%@index.each do |s|%>
     <tr>
     <td><%=s.admin.username%></td>
     <td><%=link_to s.title,home_path(s.id)%></td>
+    <td><%=s.created_at.to_s%></td>
     <%end%>
   </table>
   </div>
@@ -30,3 +31,16 @@
 
 </div>
 <!--end of home-->
+
+<script type 'javascript'>
+$(function(){
+  $('#home .slide').slick({
+    accessibility: true,
+    autoplay: true,
+    autoplaySpeed: 1000,
+    dots: true,
+    fade: true,
+  });
+  $('h2').css('color','red');
+});
+</script>

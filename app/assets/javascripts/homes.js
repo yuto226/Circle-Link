@@ -1,4 +1,3 @@
-
 $(function(){
   $('#home .slide').slick({
     accessibility: true,

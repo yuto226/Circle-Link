@@ -13,6 +13,7 @@
 
 #home .slide{
   text-align:center;
+  margin-top: 20px;
 }
 
 #home h2{
@@ -24,8 +25,13 @@
 #home .topic{
   border:1px solid gray;
   margin: 10px;
-  padding-right: 400px;
+  padding-right: 200px;
 }
+
+#home td {
+  text-align: center;
+}
+
 #home .link{
   margin-bottom: 300px;
 }
@@ -41,7 +47,6 @@
 	background-color: #59b1eb;
 }
 
-#home .check_button{
-
-  //display: inline;
+#home #check_button{
+  float: right;
 }
