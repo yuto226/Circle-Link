@@ -7,7 +7,7 @@
   <p>あなたの投稿</p>
   <ul>
     <%if @index.blank?%>
-    <p>まだ投稿がないみたいですね！あと○件投稿できます！</p>
+    <p>まだ投稿がないみたいですね！あと<i><%=current_admin.limit%></i>件投稿できます！</p>
     <p><i><%=link_to "ここ",admins_new_path%></i>から投稿してみましょう！</p>
     <%else%>
   <%@index.each do |s|%>

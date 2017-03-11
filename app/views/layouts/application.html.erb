@@ -19,7 +19,7 @@
         <li><%=link_to "管理者ログイン",admin_session_path%></li>
         <li><%=link_to "テスト新規登録",new_admin_registration_path%></li>
       </ul>
-      <div class="logo_space"><%=image_tag "/images/circle_log.png",:size => "200x60"%></div>
+      <div class="logo_space"><%=link_to image_tag("/images/circle_log.png",{:size => "200x60"}),root_path%></div>
     </div>
   </body>
 </html>
