@@ -15,6 +15,7 @@
  */
  body{
    width: 1000px;
+   background-image: url(/images/sports.png);
  }
  #header{
     height: 80px;
