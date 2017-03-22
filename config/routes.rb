@@ -7,6 +7,9 @@ Rails.application.routes.draw do
   get 'admins/index'
   get 'admins/new'
   get "admins/show/:id" => 'admins#show'
+  get "admins/edit_article/:id" => 'admins#edit_article'
+  patch "/article/:id" => 'admins#update'
+  delete "admins/delete_article/:id" => "admins#delete"
   post '/articles' => 'admins#create'
   devise_for :admins
   devise_scope :admin do

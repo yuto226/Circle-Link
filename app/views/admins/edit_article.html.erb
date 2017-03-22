@@ -1,0 +1,11 @@
+<%=form_for @edit_article,url:"/article/#{@edit_article.id}" do |f|%>
+<div>
+<%=f.label :title%>
+<%=f.text_field :title%>
+</div>
+<div>
+  <%=f.label :contents%>
+  <%=f.text_area :contents,:size=>"80x5"%>
+</div>
+<%=f.submit "保存"%>
+<%end%>

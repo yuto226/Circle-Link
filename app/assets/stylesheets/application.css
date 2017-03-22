@@ -73,9 +73,7 @@
 }
 
 #hutter{
-<<<<<<< HEAD
-margin-left: 15px;
-=======
+  margin-left: 15px;
   border-top:1px solid gray;
 
 }
@@ -92,5 +90,4 @@ margin-left: 15px;
 #hutter .logo_space{
   text-align:center;
   margin-top:40px;
->>>>>>> yamaguchi/css
 }
