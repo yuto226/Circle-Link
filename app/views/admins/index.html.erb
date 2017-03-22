@@ -1,7 +1,9 @@
-<div id="home">
 <div id="main">
 <div id="contents">
-  <%=current_admin.username%>様
+  <div id="admin">
+  <div class="name_space">
+<%=current_admin.username%>様
+</div>
 
 <div class="new">
   <p>あなたの投稿</p>
@@ -9,14 +11,16 @@
   <%@index.each do |s|%>
   <li>
   <%=link_to s.title,"/admins/show/#{s.id}"%>
+  <%=link_to "[編集]","/admins/edit_article/#{s.id}"%>
+  <%=link_to "[削除]","/admins/delete_article/#{s.id}",method: :delete, data: {confirm: "一度削除したら元には戻せません。\n本当に削除してよろしいですか？"}%>
 </li>
   <%end%>
 </ul>
 </div>
 
 </div>
+<!--end of admin-->
+</div>
 <!--end of contents-->
 </div>
 <!--endo of main-->
-</div>
-<!--end of home-->

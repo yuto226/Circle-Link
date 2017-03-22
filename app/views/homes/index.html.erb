@@ -1,8 +1,23 @@
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+
+<script type=text/javascript>
+$(document).ready(function(){
+  $('.slide').slick({
+    accessibility: true,
+    autoplay: true,
+    autoplaySpeed: 900,
+    fade: true,
+  });
+});
+</script>
+
 <div id="home">
 <div class="slide">
   <div><%=image_tag "/images/home1.jpg",:size => "700x350"%></div>
+  <div><%=image_tag "/images/home2.jpg",:size => "700x350"%></div>
 </div>
-
 <div class="new">
 <h2>新着情報</h2>
 <p>and more...</p>
@@ -25,8 +40,8 @@
 
 <div class="link">
 <ul>
-  <li><%=link_to "サークル一覧",homes_circle_path,{:class=>"button"}%></li>
-  <li><%=link_to "Neoニートとは！？",neets_index_path,{:class=>"button"}%></li>
+  <li><%=link_to (image_tag '/images/top4.jpg',{:size => '170x130'}),homes_circle_path,{:class=>"button"}%></li>
+  <li><%=link_to (image_tag '/images/top_3.jpg',{:size => '170x130'}),neets_index_path,{:class=>"button"}%></li>
 </ul>
 </div>
 
