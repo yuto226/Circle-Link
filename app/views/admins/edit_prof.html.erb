@@ -1,0 +1,19 @@
+<%=form_for @edit_prof,url:"/admins/#{@edit_prof.admin_id}" do |f|%>
+<div>
+  <%=f.label :"紹介文をここに書いてください。"%>
+  <%=f.text_area :prof%>
+</div>
+<div>
+  <%=f.label :"活動人数"%>
+  <%=f.text_field :num%>人
+</div>
+<div>
+  <%=f.label :"活動場所"%>
+  <%=f.text_field :place%>
+</div>
+<div>
+  <%=f.label :"基本活動時間"%>
+  <%=f.text_field :time%>
+</div>
+<%=f.submit "確定"%>
+<%end%>

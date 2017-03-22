@@ -8,9 +8,11 @@ Rails.application.routes.draw do
   get 'admins/new'
   get "admins/show/:id" => 'admins#show'
   get "admins/edit_article/:id" => 'admins#edit_article'
-  patch "/article/:id" => 'admins#update'
+  patch "/article/:id" => 'admins#update_article'
   delete "admins/delete_article/:id" => "admins#delete"
   post '/articles' => 'admins#create'
+  get '/admins/edit_prof/:id' => 'admins#edit_prof'
+  patch '/admins/:id' => 'admins#update_prof'
   devise_for :admins
   devise_scope :admin do
   get '/admins/sign_out' =>'devise/sessions#destroy'
