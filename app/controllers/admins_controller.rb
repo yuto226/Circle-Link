@@ -61,6 +61,6 @@ end
     params.require(:article).permit([:title,:contents])
   end
   def admin_prof_params
-    params.require(:profile).permit([:prof,:num,:place,:time])
+    params.require(:profile).permit([:prof,:num,:place,:time,:image])
   end
 end

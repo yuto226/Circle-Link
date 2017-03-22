@@ -3,13 +3,14 @@
 <table>
 	<%unless @msg.blank?%>
 	<tr>
-	<th>ID</th><th>Name</th><th>Janru</th>
+	<th>ID</th><th>Name</th><th>Genre</th><th>Image</th>
 	</tr>
 	<% @msg.each do |obj| %>
 	<tr>
 	<td><%= obj.id %></td>
 	<td><%= obj.admin.username %></td>
 	<td><%= obj.genre.name %></td>
+	<td><%= image_tag obj.image.to_s%></td>
 	</tr>
 	<%end%>
 	<%else%>

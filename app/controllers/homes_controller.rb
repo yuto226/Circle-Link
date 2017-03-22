@@ -1,7 +1,12 @@
 class HomesController < ApplicationController
   def index
-    @index=Article.limit(6).order(created_at: :desc)
+    @show_info=Article.limit(6).order(created_at: :desc)
   end
+
+  def show_info
+    @show_info=Article.all
+  end
+
   def show
     @show=Article.find(params[:id])
   end
@@ -18,6 +23,6 @@ class HomesController < ApplicationController
       relation = relation.where(:genre_id => @conditions.genre_ids)
     end
     @msg = relation
-
   end
+
 end

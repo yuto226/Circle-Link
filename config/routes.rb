@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   root 'homes#index'
   resources:homes
   post '/homes/circles/index'
+  get '/homes/index/show_info' => 'homes#show_info'
   get 'admins/index'
   get 'admins/new'
   get "admins/show/:id" => 'admins#show'

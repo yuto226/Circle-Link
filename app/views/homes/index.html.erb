@@ -3,7 +3,8 @@
 <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
 
 <script type=text/javascript>
-$(document).ready(function(){
+$(window).load(function(){
+  console.log("a");
   $('.slide').slick({
     accessibility: true,
     autoplay: true,
@@ -21,22 +22,8 @@ $(document).ready(function(){
 </div>
 <div class="new">
 <h2>新着情報</h2>
-<p>and more...</p>
-  <div class="topic">
-    <table>
-      <tr>
-        <th>サークル名</th>
-        <th>投稿</th>
-        <th>投稿日時</th>
-      </tr>
-    <%@index.each do |s|%>
-    <tr>
-    <td><%=s.admin.username%></td>
-    <td><%=link_to s.title,home_path(s.id)%></td>
-    <td><%=s.created_at.to_s%></td>
-    <%end%>
-  </table>
-  </div>
+<p><%=link_to "and more...",homes_index_show_info_path%></p>
+  <%=render 'show_info'%>
 </div>
 
 <div class="link">
