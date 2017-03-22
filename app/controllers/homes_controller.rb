@@ -1,6 +1,6 @@
 class HomesController < ApplicationController
   def index
-    @index=Article.all
+    @index=Article.limit(6).order(created_at: :desc)
   end
   def show
     @show=Article.find(params[:id])

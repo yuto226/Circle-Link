@@ -22,11 +22,51 @@
 #home .new{
   float:left;
 }
+
+#home .new h2{
+  margin-left: 15px;
+  margin-bottom: -5px;
+  text-align: left;
+  display: inline-block;
+  width:50%;
+}
+
+#home .new p{
+  float: right;
+  margin-bottom: auto;
+  text-align: right;
+  display: inline-block;
+  width: auto;
+}
+
 #home .topic{
+  width: 100px;
   border:1px solid gray;
   margin: 10px;
   padding-right: 400px;
 }
+#home .topic table{
+  text-align: center;
+  width: 500px;
+    table-layout:fixed;;
+}
+
+#home table tr th:nth-of-type(1) {
+width: 20%;
+}
+#home table td:nth-child(1) {
+  width: 20%;
+}
+
+#home table tr th:nth-of-type(2) {
+  white-space: nowrap;
+  width: 40%;
+}
+#home table td:nth-child(2) {
+  white-space: nowrap;
+  width: 40%;
+}
+
 #home .link{
   margin-bottom: 300px;
 }
