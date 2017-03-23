@@ -1,4 +1,16 @@
 <%=form_for(@admin) do |f|%>
+<%if @new_event.errors.any? %>
+  <div id="error_explanation">
+    <h2><%= @new_event.errors.count %>件のエラーがあります。</h2>
+
+    <ul>
+    <% @new_event.errors.full_messages.each do |msg| %>
+      <li><%= msg %></li>
+    <% end %>
+    </ul>
+  </div>
+<% end %>
+
 <div>
 <%=f.label :title%>
 <%=f.text_field :title%>

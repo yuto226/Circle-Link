@@ -1,4 +1,16 @@
 <%=form_for @edit_article,url:"/article/#{@edit_article.id}" do |f|%>
+<% if @update_article.errors.any? %>
+  <div id="error_explanation">
+    <h2><%= @update_article.errors.count %>件のエラーがあります。</h2>
+
+    <ul>
+    <% @update_article.errors.full_messages.each do |msg| %>
+      <li><%= msg %></li>
+    <% end %>
+    </ul>
+  </div>
+<% end %>
+
 <div>
 <%=f.label :title%>
 <%=f.text_field :title%>

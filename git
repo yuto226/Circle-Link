@@ -1,0 +1,162 @@
+[33mcommit 81fb96c7cff969391c6f0f8cd8774385dbc2aec7[m
+Author: Yuto Suzuki <yuto.226.karasia@i.softbank.jp>
+Date:   Thu Mar 23 08:10:28 2017 +0900
+
+    画像アップロード機能つけました。
+    sliderたまに表示されないから直しておきます。
+
+[33mcommit 3cf32c4677fc1827b8d5efc7a693cf4e300db9b0[m
+Author: Yuto Suzuki <yuto.226.karasia@i.softbank.jp>
+Date:   Thu Mar 23 00:04:42 2017 +0900
+
+    mergebranch suzuki/admin
+
+[33mcommit 7a4599fba246e859a967e772109ed378688bbb1f[m
+Author: Yuto Suzuki <yuto.226.karasia@i.softbank.jp>
+Date:   Thu Mar 23 00:00:07 2017 +0900
+
+    スライダー作成　jquery機能
+    管理者画面　編集　削除　復活させた
+
+[33mcommit c31200aa7c32592ad45af6f198e95426390638eb[m
+Author: Yuto Suzuki <yuto.226.karasia@i.softbank.jp>
+Date:   Wed Mar 22 21:27:21 2017 +0900
+
+    ホーム画面css 調整
+
+[33mcommit 0e496aaa30f50534c175b70c336ce83e0e070384[m
+Author: Yuto Suzuki <yuto.226.karasia@i.softbank.jp>
+Date:   Wed Mar 22 16:44:54 2017 +0900
+
+    path修正完了
+    ほぼ直ったけど、完全じゃないからとりあえずこれをスタートでpullして開発してください。
+
+[33mcommit a8bdf2751e6e0bc2de036e7a547af5bec68286e0[m
+Author: Yuto Suzuki <yuto.226.karasia@i.softbank.jp>
+Date:   Wed Mar 22 16:28:03 2017 +0900
+
+    タイムフォーマット　ルーティングコピー　正常動作
+
+[33mcommit 0af1838d31468d2b4e541c5fd48e668ecaba44bf[m
+Author: Yuto Suzuki <yuto.226.karasia@i.softbank.jp>
+Date:   Wed Mar 22 15:55:43 2017 +0900
+
+    path_debag
+
+[33mcommit cbee217904826e20a6a914b3234b0ba9663347e5[m
+Author: Yuto Suzuki <yuto.226.karasia@i.softbank.jp>
+Date:   Wed Mar 8 02:18:57 2017 +0900
+
+    pathリファクタリング　不要alert削除
+
+[33mcommit 6bafe2046eb94316fd131e2427b8933599cc2963[m
+Merge: ba0bcd3 6a967f5
+Author: Yuto Suzuki <yuto.226.karasia@i.softbank.jp>
+Date:   Wed Mar 8 02:00:43 2017 +0900
+
+    Merge branch 'yamaguchi/css' & fix conflict
+    マージしたけどちょいと再現できない箇所があったからいくつかみてもらえるといいかもですm(__)m
+
+[33mcommit 6a967f5041e423c8441ca784e32e3081ef6085d9[m
+Author: Yamaguchi Satoshi <yama_sato3104@outlook.jp>
+Date:   Wed Mar 8 01:23:12 2017 +0900
+
+    js非動作
+
+[33mcommit ba0bcd317ce081df82033bd1480d7c2a1d5ea773[m
+Merge: 98d81ad 8a3e801
+Author: Yuto Suzuki <yuto.226.karasia@i.softbank.jp>
+Date:   Tue Mar 7 23:46:37 2017 +0900
+
+    Merge commit yamaguch/css & fix conflict
+    スライダー位置設定
+    css調整、確認
+    ルーティング修正
+    情報一覧表示修正
+
+[33mcommit 8a3e8013551def06d361e3a2eec48317e3da144a[m
+Merge: 5b52c63 cf7a1c1
+Author: Yuto Suzuki <yuto.226.karasia@i.softbank.jp>
+Date:   Tue Mar 7 23:42:59 2017 +0900
+
+    WIP on yamaguchi/css: 5b52c63 ヘッダーの作成
+
+[33mcommit cf7a1c1c91e756044ece55615e1bf5e4048ecff1[m
+Author: Yuto Suzuki <yuto.226.karasia@i.softbank.jp>
+Date:   Tue Mar 7 23:42:59 2017 +0900
+
+    index on yamaguchi/css: 5b52c63 ヘッダーの作成
+
+[33mcommit 5b52c63622ac312e0d897dc21efd6f69b600e798[m
+Author: Yamaguchi Satoshi <yama_sato3104@outlook.jp>
+Date:   Sat Mar 4 00:18:37 2017 +0900
+
+    ヘッダーの作成
+
+[33mcommit 98d81adeb417c0808bf8f72678065120c33fb311[m
+Author: Yuto Suzuki <yuto.226.karasia@i.softbank.jp>
+Date:   Fri Mar 3 23:47:42 2017 +0900
+
+    ジャンル選択　一部css調整
+
+[33mcommit 5fe17f15d81f10f536fef9e8eebb7a79f5dfffbb[m
+Author: Yuto Suzuki <yuto.226.karasia@i.softbank.jp>
+Date:   Fri Mar 3 12:58:49 2017 +0900
+
+    データベース編集
+
+[33mcommit 19df177746e7308a37f25b42c8e59a25cb09175c[m
+Author: unknown <小泉祐樹>
+Date:   Fri Mar 3 10:52:13 2017 +0900
+
+    checkBox生成
+
+[33mcommit eed3cc45e66f853fcbcef043037c4c994ec5bfa2[m
+Merge: 50edb22 3f5c212
+Author: Yamaguchi Satoshi <yama_sato3104@outlook.jp>
+Date:   Fri Mar 3 10:24:22 2017 +0900
+
+    Merge branch 'master' of https://github.com/yuto226/Circle-Link into yamaguchi/css
+
+[33mcommit 3f5c2124e5d2706948159eaa7bedc97498071974[m
+Author: Yuto Suzuki <yuto.226.karasia@i.softbank.jp>
+Date:   Sat Feb 25 12:07:58 2017 +0900
+
+    テスト用管理者ログインページ作成
+    各種css微調整
+
+[33mcommit 8de5eaafd7c8096b8580cd905165d8a70863edf3[m
+Author: Yuto Suzuki <yuto.226.karasia@i.softbank.jp>
+Date:   Sat Feb 25 11:49:45 2017 +0900
+
+    HOMEボタン作成　ロゴ追加
+
+[33mcommit 50edb22ffaf51da76143231ec406baabfa00ddab[m
+Author: Yamaguchi Satoshi <namae.kaetene@u-cast.com>
+Date:   Sat Feb 25 00:09:09 2017 +0900
+
+    test commit
+
+[33mcommit 0aab54b3d164ec179a3dd6d3232cec1d8959ef97[m
+Author: Yuto Suzuki <yuto.226.karasia@i.softbank.jp>
+Date:   Tue Feb 21 10:12:04 2017 +0900
+
+    サークル一覧雛形 管理者ページ改良
+
+[33mcommit a19341e721e852fdb36f68b8a3812fe2c6869b3d[m
+Author: Yuto Suzuki <yuto.226.karasia@i.softbank.jp>
+Date:   Fri Feb 17 15:55:42 2017 +0900
+
+    管理者ページ 新着表示
+
+[33mcommit d9da5e9e66773d67542ab54257fc65e727cfe304[m
+Author: Yuto Suzuki <yuto.226.karasia@i.softbank.jp>
+Date:   Fri Feb 17 12:33:33 2017 +0900
+
+    ホームページ作成
+
+[33mcommit 44334c5cc7235375e4b6c02ee884260e14fa043d[m
+Author: Yuto Suzuki <yuto.226.karasia@i.softbank.jp>
+Date:   Fri Feb 17 11:28:38 2017 +0900
+
+    test commit

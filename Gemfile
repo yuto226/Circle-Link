@@ -1,4 +1,6 @@
 source 'https://rubygems.org'
+
+gem 'rails-i18n'
 gem 'rmagick'
 gem 'carrierwave'
 gem 'devise'
