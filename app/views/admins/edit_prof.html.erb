@@ -1,4 +1,17 @@
 <%=form_for @edit_prof,url:"/admins/#{@edit_prof.admin_id}" do |f|%>
+
+<% if @update_prof.errors.any? %>
+  <div id="error_explanation">
+    <h2><%= @update_prof.errors.count %>件のエラーがあります。</h2>
+
+    <ul>
+    <% @update_prof.errors.full_messages.each do |msg| %>
+      <li><%= msg %></li>
+    <% end %>
+    </ul>
+  </div>
+<% end %>
+
 <div>
   <%=f.label :"紹介文をここに書いてください。"%>
   <%=f.text_area :prof%>
@@ -17,7 +30,7 @@
 </div>
 <div>
   <%=f.label :"基本活動時間"%>
-  <%=f.text_field :time%>
+  <%=f.text_field :time_start%>
 </div>
 <%=f.submit "確定"%>
 <%end%>
