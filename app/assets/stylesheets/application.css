@@ -61,12 +61,6 @@
  height: auto;
 }
 
-#slider {
-  background-color: red;
-  height 300px;
-  width 700px;
-  margin-left: 15px;
-}
 #main{
   width: 700px;
   margin-left:15px;
@@ -87,7 +81,9 @@
   padding:0px 5px;
 
 }
+
 #hutter .logo_space{
-  text-align:center;
+  display: inline;
+  margin-left: 200px;
   margin-top:40px;
 }
