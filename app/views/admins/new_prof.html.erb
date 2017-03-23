@@ -1,0 +1,36 @@
+<p>はじめまして！まずは団体情報を入力してください！</p>
+
+<%=form_for @new_prof,url:'/admins/create_profile' do |f|%>
+<% if @create_prof.errors.any? %>
+  <div id="error_explanation">
+    <h2><%= @create_prof.errors.count %>件のエラーがあります。</h2>
+    <ul>
+    <% @create_prof.errors.full_messages.each do |msg| %>
+      <li><%= msg %></li>
+    <% end %>
+    </ul>
+  </div>
+<% end %>
+
+<div>
+  <%=f.label :"紹介文をここに書いてください。"%>
+  <%=f.text_area :prof%>
+</div>
+<div>
+<%=f.label :image,"ユーザー画像" %>
+      <%= f.file_field :image %>
+    </div>
+<div>
+  <%=f.label :"活動人数"%>
+  <%=f.text_field :num%>人
+</div>
+<div>
+  <%=f.label :"活動場所"%>
+  <%=f.text_field :place%>
+</div>
+<div>
+  <%=f.label :"基本活動時間"%>
+  <%=f.text_field :time_start%>
+</div>
+<%=f.submit "確定"%>
+<%end%>

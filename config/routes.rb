@@ -7,6 +7,8 @@ Rails.application.routes.draw do
   get '/homes/index/show_info' => 'homes#show_info'
   get 'admins/index'
   get 'admins/new'
+  get 'admins/new_prof'
+  post '/admins/create_profile' => 'admins#create_prof'
   get "admins/show/:id" => 'admins#show'
   get "admins/edit_article/:id" => 'admins#edit_article'
   patch "/article/:id" => 'admins#update_article'

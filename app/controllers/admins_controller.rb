@@ -1,13 +1,16 @@
 class AdminsController < ApplicationController
   before_action :authenticate_admin!
+  before_action :profile_exsiste?, only: [:new,:index]
 layout'admin'
-def index
-  @index=Article.where(admin_id:current_admin.id)
-end
 
-def show
-  @show=Article.find(params[:id])
-end
+  def index
+    @index=Article.where(admin_id:current_admin.id)
+  end
+
+  def show
+    @show=Article.find(params[:id])
+  end
+
   def new
     @admin=Article.new
     @new_event=Article.new
@@ -23,6 +26,18 @@ end
       render :new
     end
   end
+
+def create_prof
+  @create_prof=Profile.new(admin_prof_params)
+  @create_prof.admin_id=current_admin.id
+  @create_prof.genre_id=1
+  if @create_prof.save
+    redirect_to admins_index_path
+  else
+    @new_prof=Profile.new
+    render :new_prof
+  end
+end
 
   def edit_article
     @update_article=Article.find(params[:id])
@@ -46,6 +61,11 @@ def delete
     redirect_to admins_index_path
 end
 
+def new_prof
+  @new_prof=Profile.new
+  @create_prof=Profile.new
+end
+
 def edit_prof
   @update_prof=Profile.find(params[:id])
   @edit_prof=Profile.find(params[:id])
@@ -63,6 +83,7 @@ end
 
 
   private
+  #params系
   def admin_set_params
     params.require(:admin).permit([:username])
   end
@@ -70,6 +91,12 @@ end
     params.require(:article).permit([:title,:contents])
   end
   def admin_prof_params
-    params.require(:profile).permit([:prof,:num,:place,:time,:image])
+    params.require(:profile).permit([:prof,:num,:place,:time_start,:time_end,:image])
+  end
+  #認証系
+  def profile_exsiste?
+    if Admin.find(current_admin.id).profile.nil?
+       redirect_to admins_new_prof_path
+     end
   end
 end
