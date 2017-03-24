@@ -3,7 +3,7 @@
   <div id="admin">
   <div class="name_space">
     <%=image_tag Profile.find_by(admin_id:current_admin.id).image.to_s%>
-<%=current_admin.username%>様
+<%=current_admin.profile.username%>様
 </div>
 
 <div class="new">

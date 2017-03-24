@@ -84,14 +84,11 @@ end
 
   private
   #params系
-  def admin_set_params
-    params.require(:admin).permit([:username])
-  end
   def admin_article_params
     params.require(:article).permit([:title,:contents])
   end
   def admin_prof_params
-    params.require(:profile).permit([:prof,:num,:place,:time_start,:time_end,:image])
+    params.require(:profile).permit([:prof,:username,:num,:place,:time_start,:time_end,:image])
   end
   #認証系
   def profile_exsiste?

@@ -1,3 +1,17 @@
 // Place all the styles related to the neets controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+#neets {
+  margin-left: 15px;
+  //background-image: url(/images/neet_back.png);
+}
+#neets h1{
+  text-align: center;
+}
+#neets .neet_list{
+  display: table-cell;
+}
+
+#neets .neet_list ul{
+  list-style: none;
+}

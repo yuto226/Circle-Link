@@ -22,14 +22,16 @@ $(window).load(function(){
 </div>
 <div class="new">
 <h2>新着情報</h2>
+<%unless @show_info.count < 6%>
 <p><%=link_to "and more...",homes_index_show_info_path%></p>
+<%end%>
   <%=render 'show_info'%>
 </div>
 
 <div class="link">
 <ul>
   <li><%=link_to (image_tag '/images/top4.jpg',{:size => '170x130'}),homes_circle_path,{:class=>"button"}%></li>
-  <li><%=link_to (image_tag '/images/top_3.jpg',{:size => '170x130'}),neets_index_path,{:class=>"button"}%></li>
+  <li><%=link_to (image_tag '/images/top_3.jpg',{:size => '170x130'}),neets_path,{:class=>"button"}%></li>
 </ul>
 </div>
 

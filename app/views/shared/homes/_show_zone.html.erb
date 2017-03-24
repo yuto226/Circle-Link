@@ -8,7 +8,7 @@
 	<% @msg.each do |obj| %>
 	<tr>
 	<td><%= obj.id %></td>
-	<td><%= obj.admin.username %></td>
+	<td><%= obj.username %></td>
 	<td><%= obj.genre.name %></td>
 	<td><%= image_tag obj.image.to_s%></td>
 	</tr>

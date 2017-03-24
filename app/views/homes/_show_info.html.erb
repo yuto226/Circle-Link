@@ -1,5 +1,8 @@
 <!--インスタンス名は@show_infoで-->
 <div class="topic">
+  <%if @show_info.blank?%>
+  <p>No DATA please waiting... </p>
+  <%else%>
   <table>
     <tr>
       <th>サークル名</th>
@@ -8,9 +11,11 @@
     </tr>
   <%@show_info.each do |s|%>
   <tr>
-  <td><%=s.admin.username%></td>
+  <td><%=s.admin.profile.username%></td>
   <td><%=link_to s.title,home_path(s.id)%></td>
   <td><%=s.created_at.to_s%></td>
   <%end%>
 </table>
+<%end%>
+
 </div>
