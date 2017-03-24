@@ -2,3 +2,5 @@ ja:
   attributes:
     num:   活動人数
     place: 活動場所
+    prof: 紹介文
+    genre: ジャンル選択

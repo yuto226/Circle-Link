@@ -28,9 +28,9 @@ layout'admin'
   end
 
 def create_prof
+  @genres = Genre.all
   @create_prof=Profile.new(admin_prof_params)
   @create_prof.admin_id=current_admin.id
-  @create_prof.genre_id=1
   if @create_prof.save
     redirect_to admins_index_path
   else
@@ -64,11 +64,13 @@ end
 def new_prof
   @new_prof=Profile.new
   @create_prof=Profile.new
+  @genres = Genre.all
 end
 
 def edit_prof
   @update_prof=Profile.find(params[:id])
   @edit_prof=Profile.find(params[:id])
+  @genres = Genre.all
 end
 
 def update_prof
@@ -88,7 +90,7 @@ end
     params.require(:article).permit([:title,:contents])
   end
   def admin_prof_params
-    params.require(:profile).permit([:prof,:username,:num,:place,:time_start,:time_end,:image])
+    params.require(:profile).permit([:prof,:username,:num,:place,:time_start,:time_end,:image,:genre_id])
   end
   #認証系
   def profile_exsiste?

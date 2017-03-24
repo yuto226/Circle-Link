@@ -8,6 +8,10 @@
 
 <div class="new">
   <p>あなたの投稿</p>
+  <%if @index.count==0%>
+  <p>まだサークル情報の投稿がないみたいですね！</p>
+  <p><%=link_to 'こちら',admins_new_path%>から投稿してみましょう！</p>
+  <%else%>
   <ul>
   <%@index.each do |s|%>
   <li>
@@ -17,6 +21,7 @@
 </li>
   <%end%>
 </ul>
+<%end%>
 </div>
 
 </div>

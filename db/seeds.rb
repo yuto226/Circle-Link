@@ -7,4 +7,5 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 Genre.create(name: '音楽系')
 Genre.create(name: 'スポーツ系')
+Genre.create(name: 'イベント系')
 Genre.create(name: 'その他')
