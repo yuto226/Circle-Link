@@ -5,24 +5,37 @@
 
 <script type=text/javascript>
 $(window).load(function(){
-  $('.slide').slick({
-    accessibility: true,
+  $('#main_slide').slick({
+    centerMode:true,
+    arrows:false,
     autoplay: true,
     autoplaySpeed: 900,
     fade: true,
   });
+
+    $('#msg').find('h2').fadeIn(2000);;
 });
+
 </script>
 <%end%>
 
 <div id="home">
-<div class="slide">
-  <div><%=image_tag "/images/home1.jpg",:size => "700x350"%></div>
-  <div><%=image_tag "/images/home2.jpg",:size => "700x350"%></div>
+<div id="msg">
+  <%=image_tag '/images/baloon.gif',:size=>"70x70"%>
+  <%=image_tag '/images/top_msg.png'%>
+  <%=image_tag '/images/baloon.gif',:size=>"70x70"%>
+  <h2>これから茨城大学で過ごしていくにあたって、サークルでかけがえのない友人を作ってみるのはいかがですか？<br>
+  このサイトはそのお手伝いをいたします。</h2>
 </div>
+
+  <div id="main_slide">
+    <div><%=image_tag "/images/home1.jpg",:size => "700x350"%></div>
+    <div><%=image_tag "/images/home2.jpg",:size => "700x350"%></div>
+  </div>
+
 <div class="new">
 <h2>新着情報</h2>
-<%unless @show_info.count < 6%>
+<%unless @show_info.count < 7%>
 <p><%=link_to "and more...",homes_index_show_info_path%></p>
 <%end%>
   <%=render 'show_info'%>

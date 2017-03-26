@@ -1,6 +1,18 @@
 // Place all the styles related to the homes controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+#home{
+//margin-left:15px;
+background: url(/images/sakura2.gif);
+}
+#home #msg{
+  display: block;
+  text-align: center;
+}
+
+#home #msg h2{
+  display: none;
+}
 
 #home .list li{
   margin-right:15px;
@@ -9,12 +21,6 @@
 }
 #home li{
   list-style: none;
-}
-
-#home .slide{
-  margin-left: 15%;
-  margin-top:15px;
-  text-align:center;
 }
 
 #home h2{
@@ -89,7 +95,9 @@ width: 20%;
 	background-color: #59b1eb;
 }
 
-#home .check_button{
-
-  //display: inline;
+/*slick関連*/
+#home #main_slide{
+  margin-left: 15%;
+  margin-top:15px;
+  text-align:center;
 }
