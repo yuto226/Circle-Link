@@ -1,6 +1,23 @@
 // Place all the styles related to the homes controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+#home li{
+  list-style: none;
+}
+
+#home .list li{
+  margin-right:15px;
+  list-style: none;
+  float:left;
+}
+
+#home h2{
+  font-size: 20px;
+}
+#home .new{
+  float:left;
+}
+
 #home{
 //margin-left:15px;
 background: url(/images/sakura2.gif);
@@ -15,21 +32,6 @@ background: url(/images/sakura2.gif);
   color:#CC99CC;
 }
 
-#home .list li{
-  margin-right:15px;
-  list-style: none;
-  float:left;
-}
-#home li{
-  list-style: none;
-}
-
-#home h2{
-  font-size: 20px;
-}
-#home .new{
-  float:left;
-}
 
 #home .new h2{
   margin-left: 15px;
