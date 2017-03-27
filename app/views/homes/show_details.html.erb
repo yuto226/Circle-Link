@@ -1,0 +1,36 @@
+<div id="home">
+<div id="show_details">
+  <div class="image_zone">
+  <%if @details.image.blank?%>
+  <%image_tag 'noimage.png'%>
+  <%else%>
+  <%=image_tag @details.image.to_s%>
+  <%end%>
+</div>
+
+<table class="details_table">
+  <h1><%=@details.username%></h1>
+  <tr>
+    <th>活動場所</th>
+    <th>サークル概要・説明</th>
+  </tr>
+
+  <tr>
+    <td><%=@details.place%></td>
+    <td><%=@details.prof%></td>
+  </tr>
+
+  <tr>
+    <th>活動人数</th>
+    <th>基本活動日時</th>
+  </tr>
+
+  <tr>
+    <td><%=@details.num%></td>
+    <td>毎週<%=@details.week_day%>曜<%=@details.time_start%>〜<%=@details.time_end%></td>
+  </tr>
+</table>
+</div>
+<!--show_details-->
+</div>
+<!--home-->

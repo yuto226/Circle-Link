@@ -35,7 +35,7 @@ $(window).load(function(){
 
 <div class="new">
 <h2>新着情報</h2>
-<%unless @show_info.count < 7%>
+<%unless @show_info.count < 6%>
 <p><%=link_to "and more...",homes_index_show_info_path%></p>
 <%end%>
   <%=render 'show_info'%>

@@ -1,3 +1,4 @@
+<div class="form_area">
 <%=form_for @edit_prof,url:"/admins/#{@edit_prof.admin_id}" do |f|%>
 
 <% if @update_prof.errors.any? %>
@@ -11,35 +12,61 @@
     </ul>
   </div>
 <% end %>
-<div>
-  <%=f.label :"団体名"%>
-  <%=f.text_field :username%>
-</div>
+<table>
+  <tr>
+  <th><%=f.label :"団体名"%></th>
+  <th><%=f.label :"紹介文をここに書いてください。"%></th>
+</tr>
 
-<div>
-  <%=f.label :"サークルのジャンルを選択してください。"%>
-  <%=f.select :genre_id,  @genres.map{|t| [t.name, t.id]} %>
-</div>
+  <tr>
+    <td><%=f.text_field :username%>様</td>
+    <td><%=f.text_area :prof%></td>
+</tr>
 
-<div>
-  <%=f.label :"紹介文をここに書いてください。"%>
-  <%=f.text_area :prof%>
-</div>
-<div>
-<%=f.label :image,"ユーザー画像" %>
-      <%= f.file_field :image %>
-    </div>
-<div>
-  <%=f.label :"活動人数"%>
-  <%=f.text_field :num%>人
-</div>
-<div>
-  <%=f.label :"活動場所"%>
-  <%=f.text_field :place%>
-</div>
-<div>
-  <%=f.label :"基本活動時間"%>
-  <%=f.text_field :time_start%>
-</div>
-<%=f.submit "確定"%>
+<tr>
+  <th><%=f.label :image,"ユーザー画像" %></th>
+  <th><%=f.label :"活動場所"%></th>
+</tr>
+
+<tr>
+  <td><%= f.file_field :image %></td>
+  <td><%=f.text_field :place%></td>
+</tr>
+
+<tr>
+  <th><%=f.label :"サークルのジャンルを選択してください。"%></th>
+  <th><%=f.label :"活動人数"%></th>
+
+</tr>
+
+  <tr>
+    <td><%=f.select :genre_id,  @genres.map{|t| [t.name, t.id]} %></td>
+<td><%=f.text_field :num%>人</td>
+
+
+</tr>
+
+<tr>
+  <th><%=f.label :"基本活動日時"%></th>
+  <td colspan="3"><%=f.select :week_day,SELECT_DAY,:prompt => "水"%>曜日
+  <%=f.select :time_start,SELECT_TIME%>〜
+  <%=f.select :time_end,SELECT_TIME%></td>
+</tr>
+
+<tr>
+  <th colspan="3">※↓第二活動日時がある方は入力してください！↓</th>
+</tr>
+
+<tr>
+  <th><%=f.label :"基本活動日時2"%></th>
+  <td colspan="3"><%=f.select :week_day2,SELECT_DAY,:prompt => "土"%>曜日
+  <%=f.select :time_start2,SELECT_TIME%>〜
+  <%=f.select :time_end2,SELECT_TIME%></td>
+</tr>
+
+<tr>
+  <td><%=f.submit "確定"%></td>
+</tr>
+
 <%end%>
+</div>
