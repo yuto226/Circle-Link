@@ -1,10 +1,24 @@
+<div id="home">
 ﻿<div class = "after_check">
-	<p>サークル一覧</p>
+	<h1>サークル一覧</h1>
+	<%unless @msg.blank?%>
+	<% @msg.each do |obj| %>
+	<figure class ="picture_box">
+		<%= image_tag obj.image.to_s,:class=>'picture_size' %>
+		<figcaption><%= obj.username %></figcaption>
+	</figure>
+	<%end%>
+	<%else%>
+		<p>まだ、サークルが登録されていないみたいです。もうしばらくお待ちください。</p>
+	<% end %>
+<!--
 <table>
 	<%unless @msg.blank?%>
-	<tr>
+
+
+<tr>
 	<th>ID</th><th>Name</th><th>Genre</th><th>Image</th>
-	</tr>
+</tr>
 	<% @msg.each do |obj| %>
 	<tr>
 	<td><%= obj.id %></td>
@@ -16,10 +30,12 @@
 	<td><%= image_tag obj.image.to_s%></td>
 	<%end%>
 	</tr>
+
 	<%end%>
 	<%else%>
 	<p>まだ、サークルが登録されていないみたいです。もうしばらくお待ちください。</p>
 	<% end %>
 </table>
-
+-->
+</div>
 </div>
