@@ -36,6 +36,21 @@
   width: 50%;
 }
 
+#home{
+//margin-left:15px;
+background: url(/images/sakura2.gif);
+}
+#home #msg{
+  display: block;
+  text-align: center;
+}
+
+#home #msg h2{
+  display: none;
+  color:#CC99CC;
+}
+
+
 /* line 35, /home/unicast/circlelink/app/assets/stylesheets/homes.scss */
 #home .new p {
   float: right;
