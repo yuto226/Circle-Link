@@ -39,8 +39,25 @@
   <%=f.text_field :place%>
 </div>
 <div>
-  <%=f.label :"基本活動時間"%>
-  <%=f.text_field :time_start%>
+  <%=f.label :"基本活動日時"%>
+  <%=f.select :week_day,SELECT_DAY,:prompt => "水"%>曜日
+  <%=f.select :time_start,SELECT_TIME%>〜
+  <%=f.select :time_end,SELECT_TIME,:prompt => "未定"%>
+</div>
+
+  <p>※第二活動日時がある方は入力してください！</p>
+  <div　class="day2_form">
+    <%=f.label :"基本活動日時2"%>
+    <%=f.select :week_day2,SELECT_DAY,:prompt => "土"%>曜日
+    <%=f.select :time_start2,SELECT_TIME,:prompt => "選択してください"%>〜
+    <%=f.select :time_end2,SELECT_TIME,:prompt => "未定"%>
 </div>
 <%=f.submit "確定"%>
 <%end%>
+
+<script type="text/javascript">
+$('.a').on('click',function(){
+  $(this).find('.day2_form').show();
+  $(this).hide();
+});
+</script>

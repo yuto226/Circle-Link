@@ -1,12 +1,16 @@
 Rails.application.routes.draw do
   root 'homes#index'
-  get 'homes/circle'
+  #neets
   get '/neets' => 'neets#index'
   get 'neets/show'
   get '/neets/circle'
-  resources:homes
-  post '/homes/circles/index'
+  #homes
+  resources:homes ,:except => [:show]
+  get 'homes/show/:id' => 'homes#show'
+  get 'homes/circle'
+  get "homes/show_details/:id" => 'homes#show_details',as: 'homes_show_details'
   get '/homes/index/show_info' => 'homes#show_info'
+  #admins関係
   get 'admins/index'
   get 'admins/new'
   get 'admins/new_prof'

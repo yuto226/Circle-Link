@@ -95,6 +95,30 @@ width: 20%;
 	background-color: #59b1eb;
 }
 
+#home #show_details{
+  margin-left:30px;
+}
+
+#home #show_details h1{
+  display: inline;
+  margin-left:250px;
+}
+
+#home #show_details .image_zone{
+  display: inline;
+  margin-left: 160px;
+}
+
+#home #show_details table{
+  text-align: center;
+  width:500px;
+}
+
+#home .details_table{
+  margin-left: 40%;
+}
+
+
 /*slick関連*/
 #home #main_slide{
   margin-left: 15%;

@@ -1,4 +1,8 @@
 class HomesController < ApplicationController
+  def show_details
+    @details=Profile.find(params[:id])
+  end
+
   def index
     @show_info=Article.limit(6).order(created_at: :desc)
   end
@@ -8,8 +12,13 @@ class HomesController < ApplicationController
   end
 
   def show
+    unless params[:id].nil?
     @show=Article.find(params[:id])
+  else
+    @show=Article.new
   end
+  end
+
   def circle
     conditions = {:genre_ids => []}.merge(params[:conditions] || {})
     @conditions = OpenStruct.new(conditions)
