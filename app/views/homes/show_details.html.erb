@@ -2,7 +2,7 @@
 <div id="show_details">
   <div class="image_zone">
   <%if @details.image.blank?%>
-  <%image_tag 'noimage.png'%>
+  <%=image_tag 'noimage.png'%>
   <%else%>
   <%=image_tag @details.image.to_s%>
   <%end%>

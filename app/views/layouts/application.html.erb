@@ -11,9 +11,9 @@
   <body>
 
        <div id="header">
-         <div class="logo_space"><%=link_to (image_tag "/images/circle_log.png",{:size => "250x72"}),root_path%></div>
+         <div class="logo_space"><%=link_to (image_tag "/images/circle_log.png",{:size => "250x72"}),homes_path%></div>
            <ul>
-             <li><%=link_to "新着情報",root_path,{:class =>"button"}%></li>
+             <li><%=link_to "新着情報",homes_path,{:class =>"button"}%></li>
              <li><%=link_to "サークル一覧",homes_circle_path,{:class=>"button"}%></li>
              <li><%=link_to "Neoニートとは！？",neets_path,{:class=>"button"}%></li>
            </ul>
@@ -26,7 +26,7 @@
         <li><%=link_to "管理者ログイン",admin_session_path%></li>
         <li><%=link_to "テスト新規登録",new_admin_registration_path%></li>
       </ul>
-      <div class="logo_space"><%=link_to (image_tag "/images/circle_log.png",{:size => "200x60"}),root_path%></div>
+      <div class="logo_space"><%=link_to (image_tag "/images/circle_log.png",{:size => "200x60"}),homes_path%></div>
     </div>
     <%=yield :javascript_after%>
   </body>
