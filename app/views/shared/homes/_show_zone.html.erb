@@ -1,25 +1,22 @@
+<div id="home">
 ﻿<div class = "after_check">
-	<p>サークル一覧</p>
-<table>
+	<h1>サークル一覧</h1>
 	<%unless @msg.blank?%>
-	<tr>
-	<th>ID</th><th>Name</th><th>Genre</th><th>Image</th>
-	</tr>
 	<% @msg.each do |obj| %>
-	<tr>
-	<td><%= obj.id %></td>
-	<td><%= obj.username %></td>
-	<td><%= obj.genre.name %></td>
-	<%if obj.image.blank?%>
-	<td><%= image_tag "/images/noimage.png"%></td>
-	<%else%>
-	<td><%= image_tag obj.image.to_s%></td>
-	<%end%>
-	</tr>
+	<figure class ="picture_box">
+		<%if obj.image.blank?%>
+		<%=image_tag 'noimage.png'%>
+		<%else%>
+		<%=link_to (image_tag obj.image.to_s,{:class=>'picture_size'}),"/homes/show_details/#{obj.admin.id}" %>
+		<%end%>
+		<figcaption><%=link_to obj.username,"/homes/show_details/#{obj.admin.id}" %></figcaption>
+	</figure>
 	<%end%>
 	<%else%>
-	<p>まだ、サークルが登録されていないみたいです。もうしばらくお待ちください。</p>
+		<p>まだ、サークルが登録されていないみたいです。もうしばらくお待ちください。</p>
 	<% end %>
-</table>
-
+	<div class="pagenate_area">
+	<%= paginate @msg %>
+</div>
+</div>
 </div>
