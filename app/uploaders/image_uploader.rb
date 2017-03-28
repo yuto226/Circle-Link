@@ -6,8 +6,22 @@ class ImageUploader < CarrierWave::Uploader::Base
   # include CarrierWave::MiniMagick
 
   # Choose what kind of storage to use for this uploader:
-  storage :file
-  # storage :fog
+  #storage :file
+   storage :fog
+
+# cash使います。
+ def fog_attributes
+ {
+   'Content-Type' =>  'image/jpg',
+   'Cache-Control' => "max-age=#{1.week.to_i}"
+ }
+ end
+
+     # バケット以下アイコンの保存先を指定します。
+     # ~/[バケット名]/[foldername]　配下に画像がアップロードされます。
+     def store_dir
+       "[foldername]"
+     end
 
   # Override the directory where uploaded files will be stored.
   # This is a sensible default for uploaders that are meant to be mounted:

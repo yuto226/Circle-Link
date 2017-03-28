@@ -75,6 +75,12 @@ Rails.application.configure do
   # require 'syslog/logger'
   # config.logger = ActiveSupport::TaggedLogging.new(Syslog::Logger.new 'app-name')
 
+  AWS_ACCESS_KEY_ID = 先ほど取得したアクセスキー
+  AWS_SECRET_ACCESS_KEY = 先ほど取得したシークレットアクセスキー
+  AWS_REGION= ap-northeast-1 # 東京
+  AWS_S3_BUCKET= バケット名
+  AWS_S3_URL= バケットまでのURL
+
   if ENV["RAILS_LOG_TO_STDOUT"].present?
     logger           = ActiveSupport::Logger.new(STDOUT)
     logger.formatter = config.log_formatter
@@ -83,6 +89,6 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
-  
+
 
 end
