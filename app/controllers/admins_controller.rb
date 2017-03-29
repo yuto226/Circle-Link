@@ -5,7 +5,7 @@ layout'admin'
 
   def index
     @index=Article.where(admin_id:current_admin.id)
-    @image=Profile.find_by(admin_id:current_admin.id).image.to_s
+    @image=Profile.find(current_admin.id)
   end
 
   def show
@@ -15,6 +15,7 @@ layout'admin'
   def new
     @admin=Article.new
     @new_event=Article.new
+    @limit_msg=10-Article.where(id:current_admin.id).count
   end
 
   def create
@@ -30,6 +31,7 @@ layout'admin'
 
 def create_prof
   @genres = Genre.all
+  @kinds = Kind.all
   @create_prof=Profile.new(admin_prof_params)
   @create_prof.admin_id=current_admin.id
   if @create_prof.save
@@ -66,12 +68,15 @@ def new_prof
   @new_prof=Profile.new
   @create_prof=Profile.new
   @genres = Genre.all
+  @kinds = Kind.all
+
 end
 
 def edit_prof
   @update_prof=Profile.find(params[:id])
   @edit_prof=Profile.find(params[:id])
   @genres = Genre.all
+  @kinds = Kind.all
 end
 
 def update_prof
@@ -91,7 +96,7 @@ end
     params.require(:article).permit([:title,:contents])
   end
   def admin_prof_params
-    params.require(:profile).permit([:prof,:username,:num,:place,:time_start,:time_end,:image,:genre_id])
+    params.require(:profile).permit([:prof,:username,:num,:place,:time_start,:time_end,:image,:genre_id,:kind_id])
   end
   #認証系
   def profile_exsiste?

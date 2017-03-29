@@ -1,3 +1,4 @@
+<div id="admin_prof">
 <p>はじめまして！まずは団体情報を入力してください！</p>
 
 <%=form_for @new_prof,url:'/admins/create_profile' do |f|%>
@@ -19,8 +20,8 @@
 
   <li><%=f.label :"ジャンル"%></li>
   <p><%=f.select :genre_id,@genres.map{|t| [t.name, t.id]},:prompt => "選択してください"%></p>
-
-
+  <li><%=f.label :"タイプ"%></li>
+  <p><%=f.select :kind_id,  @kinds.map{|t| [t.name, t.id]},:prompt => "選択してください"%></p>
   <li><%=f.label :"活動人数"%></li>
   <p><%=f.text_field :num%>人</p>
 
@@ -53,11 +54,6 @@
 </div>
 
 <div class="button2"><%=f.submit "確定"%></div>
+<em style="color:red;font-size:13px;">※縦:横=1:1が推奨です。<br>画像サイズの縦横比の差が大きい物は潰れて表示される可能性があります。</em>
 <%end%>
-
-<script type="text/javascript">
-$('.a').on('click',function(){
-  $(this).find('.day2_form').show();
-  $(this).hide();
-});
-</script>
+</div>
