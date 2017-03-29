@@ -5,6 +5,7 @@ layout'admin'
 
   def index
     @index=Article.where(admin_id:current_admin.id)
+    @image=Profile.find_by(admin_id:current_admin.id).image.to_s
   end
 
   def show

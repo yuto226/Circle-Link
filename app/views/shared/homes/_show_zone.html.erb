@@ -24,7 +24,11 @@
 	<td><%= obj.id %></td>
 	<td><%= obj.username %></td>
 	<td><%= obj.genre.name %></td>
+	<%if obj.image.blank?%>
+	<td><%= image_tag "/images/noimage.png"%></td>
+	<%else%>
 	<td><%= image_tag obj.image.to_s%></td>
+	<%end%>
 	</tr>
 
 	<%end%>
