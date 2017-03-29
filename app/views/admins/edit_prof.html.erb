@@ -12,7 +12,48 @@
     </ul>
   </div>
 <% end %>
-<table>
+
+<div class="prof_text">
+<ul class="sample1">
+  <li><%=f.label :"団体名"%></li>
+  <p><%=f.text_field :username%>様</p>
+  <li><%=f.label :"ジャンル"%></li>
+  <p><%=f.select :genre_id,  @genres.map{|t| [t.name, t.id]} %></p>
+  <li><%=f.label :"活動場所"%></li>
+  <p><%=f.text_field :place%></p>
+  <li><%=f.label :"活動人数"%></li>
+  <p><%=f.text_field :num%>人</p>
+  <li><%=f.label :"基本活動日時"%></li>
+  <p colspan="3">
+    <%=f.select :week_day,SELECT_DAY,:prompt => "水"%>曜日
+    <%=f.select :time_start,SELECT_TIME%>〜
+    <%=f.select :time_end,SELECT_TIME%>
+  </p>
+  <p colspan="3">※↓第二活動日時がある方は入力してください！↓</p>
+  <li><%=f.label :"基本活動日時2"%></li>
+  <p colspan="3">
+    <%=f.select :week_day2,SELECT_DAY,:prompt => "土"%>曜日
+    <%=f.select :time_start2,SELECT_TIME%>〜
+    <%=f.select :time_end2,SELECT_TIME%>
+  </p>
+  <li><%=f.label :"紹介文"%></li>
+  <p><%=f.text_area :prof%></p>
+</ul>
+</div>
+<div class="prof_pic">
+  <div class="user_pic"><%=f.label :image,"ユーザー画像" %></div>
+
+  <%if @edit_prof.image.blank?%>
+  <%=image_tag '/images/noimage.png',:size =>"184x184"%>
+  <%else%>
+  <%=image_tag @edit_prof.image.to_s,:size=>"184x184"%>
+  <%end%>
+
+  <%= f.file_field :image %>
+</div>
+
+<div class="button2"><%=f.submit "確定"%></div>
+<!--<table>
   <tr>
   <th><%=f.label :"団体名"%></th>
   <th><%=f.label :"紹介文をここに書いてください。"%></th>
@@ -67,6 +108,6 @@
 <tr>
   <td><%=f.submit "確定"%></td>
 </tr>
-
+-->
 <%end%>
 </div>

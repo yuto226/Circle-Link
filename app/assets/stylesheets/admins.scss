@@ -8,3 +8,44 @@
 .form_area input:focus {
     border:solid 1px red;
 }
+
+.prof_text{
+  float: left;
+  width: 55%;
+
+}
+.prof_text li{
+  font-size: 20px;
+  list-style: none;
+  float: left;
+  position: relative;
+  padding-right: 50px;
+}
+
+.prof_text li::after {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	z-index: -1;
+	content: '';
+	width: 70%;
+	height: 7px;
+	background-color: #b6f0fc;
+}
+
+.pfof_text p{
+  padding-left: 100px;
+}
+.prof_pic{
+  margin-top: 20px;
+  text-align: center;
+}
+.user_pic{
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.button2{
+  margin-top: 60px;
+  text-align: center;
+}

@@ -1,0 +1,30 @@
+<!--このファイル意味ないよね-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Circlelink</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+       <div id="header">
+         <div class="logo_space"><%=link_to (image_tag "/images/circle_log.png",{:size => "250x72"}),root_path%></div>
+         <div class="menu">
+           <ul>
+             <li><%=link_to "新着情報",root_path,{:class =>"button"}%></li>
+             <li><%=link_to "サークル一覧",homes_circle_path,{:class=>"button"}%></li>
+             <li><%=link_to "Neoニートとは！？",neets_index_path,{:class=>"button"}%></li>
+           </ul>
+         </div><br>
+     </div>
+    <%= yield %>
+    <div id="hutter">
+      <%=link_to "管理者ログイン",admin_session_path%>
+      <%=link_to "テスト新規登録",new_admin_registration_path%>
+      <div class="logo_space"><%=link_to (image_tag "/images/circle_log.png",{:size => "200x60"}),root_path%></div>
+    </div>
+  </body>
+</html>
