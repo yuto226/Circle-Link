@@ -49,6 +49,7 @@ padding-bottom: 20px;
 
 #home h2{
   font-size: 20px;
+
 }
 #home .new{
   //background-color: red;
@@ -73,6 +74,7 @@ padding-bottom: 20px;
 }
 
 #home .topic p{
+  margin-left: 160px;
   text-align: center;
 }
 
@@ -103,10 +105,6 @@ width: 20%;
   margin-left: 550px;
 }
 
-#home .link ul {
-  //display: inline;
-  //background-color: red;
-}
 
 #home .link ul li{
   display: inline;
@@ -182,6 +180,7 @@ width: 20%;
   line-height: 1.5; /*文の行高*/
   padding: 0.5em 0.5em; /*前後の文との余白*/
 }
+
 /*slick関連*/
 #home #main_slide{
   margin-left: 15%;
@@ -195,7 +194,6 @@ width: 20%;
 #home .submit{
   float:right;
   margin-left: 10px;
-
 }
 
 #home .picture_box {
@@ -228,10 +226,11 @@ width: 20%;
 
 #home .after_check{
   height:300px;
-  background-color: #f5f5f5;
+  background-image: url(/images/circle_back.jpg);
   padding-bottom: 300px;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-bottom:15px;
 }
 
 #home .after_check h1{
@@ -253,6 +252,13 @@ width: 20%;
 }
 
 #home .after_check p{
+  display: block;
+ margin-left: auto;
+ margin-right: auto;
+  text-align: center;
+}
+
+#home .after_check .nocircle img{
   display: block;
  margin-left: auto;
  margin-right: auto;
