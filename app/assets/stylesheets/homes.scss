@@ -26,8 +26,8 @@
 }
 
 #home{
-//margin-left:15px;
 background: url(/images/sakura2.gif);
+padding-bottom: 20px;
 }
 #home #msg{
   display: block;
@@ -51,41 +51,35 @@ background: url(/images/sakura2.gif);
   font-size: 20px;
 }
 #home .new{
-  float:left;
+  //background-color: red;
 }
 
 #home .new h2{
   margin-left: 15px;
-  margin-bottom: -5px;
   text-align: left;
   display: inline-block;
-  width:50%;
+  width:40%;
 }
 
 #home .new p{
-  float: right;
-  margin-bottom: auto;
-  text-align: right;
   display: inline-block;
-  width: auto;
 }
 
 #home .topic{
-  width: 100px;
+  float: left;
+  width: 50%;
   border:1px solid gray;
-  margin: 10px;
-  padding-right: 400px;
+
 }
 
 #home .topic p{
   text-align: center;
-  //width:300px;
 }
 
 #home .topic table{
   text-align: center;
-  width: 500px;
-    table-layout:fixed;;
+  width: 400px;
+  table-layout:fixed;
 }
 
 #home table tr th:nth-of-type(1) {
@@ -97,20 +91,28 @@ width: 20%;
 
 #home table tr th:nth-of-type(2) {
   white-space: nowrap;
-  width: 40%;
+  width: 35%;
 }
 #home table td:nth-child(2) {
   white-space: nowrap;
-  width: 40%;
+  width: 35%;
 }
 
 #home .link{
-  margin-bottom: 300px;
+  margin-bottom: 60px;
+  margin-left: 550px;
+}
+
+#home .link ul {
+  //display: inline;
+  //background-color: red;
+}
+
+#home .link ul li{
+  display: inline;
 }
 
 #home .button {
-  float: left;
-  margin:10px;
 	background-color: #333;
 	color: #fff;
 }
@@ -186,11 +188,8 @@ width: 20%;
   margin-top:15px;
   text-align:center;
 }
-home .search_form{
- height: 1000px;
-}
 
-#home .check_button{
+#home #check_button{
   float:right;
 }
 #home .submit{
@@ -251,4 +250,11 @@ home .search_form{
 	box-shadow:	0 1px 2px 0 rgba(0,0,0,0.2),
 				30px 0 0 0 #f0e800,
 				-30px 0 0 0 #f0e800;
+}
+
+#home .after_check p{
+  display: block;
+ margin-left: auto;
+ margin-right: auto;
+  text-align: center;
 }

@@ -1,18 +1,14 @@
-<div id="main">
-<div id="contents">
   <div id="admin">
+    <p><%=current_admin.profile.username%>様</p>
   <div class="name_space">
   <%if @image.image.blank?%>
-  <%=image_tag '/images/noimage.png'%>
+  <%=image_tag '/images/noimage.png',:size => "184x184"%>
   <%else%>
   <%=image_tag @image.image.to_s,:size=>"184x184"%>
   <%end%>
-<%=current_admin.profile.username%>様
-
 </div>
-
+<p>あなたの投稿</p>
 <div class="new">
-  <p>あなたの投稿</p>
   <%if @index.count==0%>
   <p>まだサークル情報の投稿がないみたいですね！</p>
   <p><%=link_to 'こちら',admins_new_path%>から投稿してみましょう！</p>
@@ -31,7 +27,3 @@
 
 </div>
 <!--end of admin-->
-</div>
-<!--end of contents-->
-</div>
-<!--endo of main-->

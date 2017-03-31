@@ -91,7 +91,8 @@
 #hutter{
   margin-left: 15px;
   border-top:1px solid gray;
-
+  width: 1000px;
+  clear:left;
 }
 #hutter .login{
   margin-top:10px;
@@ -105,7 +106,7 @@
 }
 
 #hutter .logo_space{
-  display: inline;
-  margin-left: 200px;
-  margin-top:40px;
+  display: block;
+  width:200px;
+  margin-left:auto;
 }

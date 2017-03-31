@@ -58,15 +58,33 @@ $(window).load(function () { //全ての読み込みが完了したら実行
 <%unless @show_info.count < 6%>
 <p><%=link_to "and more...",homes_index_show_info_path%></p>
 <%end%>
-  <%=render 'show_info'%>
+<div class="topic">
+  <%if @show_info.blank?%>
+  <p>No DATA <br>please waiting... </p>
+  <%else%>
+  <table>
+    <tr>
+      <th>サークル名</th>
+      <th>投稿</th>
+      <th>投稿日時</th>
+    </tr>
+  <%@show_info.each do |s|%>
+  <tr>
+  <td><%=link_to s.admin.profile.username,homes_show_details_path(s.admin.profile.id)%></td>
+  <td><%=link_to s.title,"homes/show/#{s.id}"%></td>
+  <td><%=s.created_at.to_s%></td>
+  <%end%>
+</table>
+<%end%>
 </div>
 
-<div class="link">
-<ul>
-  <li><%=link_to (image_tag '/images/search_img.png',{:size => '150x130'}),homes_circle_path,{:class=>"button"}%></li>
-  <li><%=link_to (image_tag '/images/neoneet_log.jpg',{:size => '170x130'}),neets_path,{:class=>"button"}%></li>
-</ul>
 </div>
+  <div class="link">
+  <ul>
+    <li><%=link_to (image_tag '/images/search_img.png',{:size => '150x130'}),homes_circle_path,{:class=>"button"}%></li>
+    <li><%=link_to (image_tag '/images/neoneet_log.jpg',{:size => '170x130'}),neets_path,{:class=>"button"}%></li>
+  </ul>
+  </div>
 
 </div>
 <!--end of home-->

@@ -15,7 +15,7 @@ layout'admin'
   def new
     @admin=Article.new
     @new_event=Article.new
-    @limit_msg=10-Article.where(id:current_admin.id).count
+    @limit_msg=10-Article.where(admin_id:current_admin.id).count
   end
 
   def create
@@ -25,6 +25,8 @@ layout'admin'
     if @new_event.save
       redirect_to admins_index_path
     else
+      @limit_msg=10-Article.where(admin_id:current_admin.id).count
+      @admin=admin.articles.new(admin_article_params)
       render :new
     end
   end

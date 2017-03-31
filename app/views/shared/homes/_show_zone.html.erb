@@ -1,6 +1,6 @@
-<div id="home">
+
 ﻿<div class = "after_check">
-	<h1>サークル一覧</h1>
+	<h1>サークル・部活一覧</h1>
 	<%unless @msg.blank?%>
 	<% @msg.each do |obj| %>
 	<figure class ="picture_box">
@@ -13,10 +13,10 @@
 	</figure>
 	<%end%>
 	<%else%>
-		<p>まだ、サークルが登録されていないみたいです。もうしばらくお待ちください。</p>
+		<%=image_tag '/images/kanban_zyunbi.png',:size => '500x300'%>
+		<em><p>※まだ、サークルが登録されていないみたいです。もうしばらくお待ちください。</p></em>
 	<% end %>
 	<div class="pagenate_area">
 	<%= paginate @msg %>
-</div>
 </div>
 </div>
