@@ -46,9 +46,9 @@
 <div class="prof_pic">
   <div class="user_pic"><%=f.label :image,"ユーザー画像" %></div>
   <%if @edit_prof.image.blank?%>
-  <%=image_tag '/images/noimage.png',:size =>"184x184"%>
+  <%=image_tag '/images/noimage.png',:size =>"184x184"%><br>
   <%else%>
-  <%=image_tag @edit_prof.image.to_s,:size=>"184x184"%>
+  <%=image_tag @edit_prof.image.to_s,:size=>"184x184"%><br>
   <%end%>
 
   <%= f.file_field :image %><br>

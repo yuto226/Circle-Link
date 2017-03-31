@@ -31,7 +31,7 @@ class HomesController < ApplicationController
 
       relation = relation.where(:genre_id => @conditions.genre_ids)
     end
-    @msg = relation.page(params[:page]).per(6)
+    @msg = relation.page(params[:page]).per(8)
   end
 
 end
