@@ -39,7 +39,7 @@ def create_prof
   if @create_prof.save
     redirect_to admins_index_path
   else
-    @new_prof=Profile.new
+    @new_prof=Profile.new(admin_prof_params)
     render :new_prof
   end
 end
