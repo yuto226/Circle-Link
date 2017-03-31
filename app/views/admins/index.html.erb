@@ -2,17 +2,17 @@
 <div id="contents">
   <div id="admin">
   <div class="name_space">
+  <h1><%=current_admin.profile.username%>様</h1>
   <%if @image.image.blank?%>
   <%=image_tag '/images/noimage.png'%>
   <%else%>
   <%=image_tag @image.image.to_s,:size=>"184x184"%>
   <%end%>
-<%=current_admin.profile.username%>様
 
 </div>
 
 <div class="new">
-  <p>あなたの投稿</p>
+  <h2>あなたの投稿</h2>
   <%if @index.count==0%>
   <p>まだサークル情報の投稿がないみたいですね！</p>
   <p><%=link_to 'こちら',admins_new_path%>から投稿してみましょう！</p>

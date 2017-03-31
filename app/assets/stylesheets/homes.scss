@@ -28,6 +28,7 @@
 #home{
 //margin-left:15px;
 background: url(/images/sakura2.gif);
+
 }
 #home #msg{
   display: block;
@@ -85,7 +86,7 @@ background: url(/images/sakura2.gif);
 #home .topic table{
   text-align: center;
   width: 500px;
-    table-layout:fixed;;
+  table-layout:fixed;;
 }
 
 #home table tr th:nth-of-type(1) {
@@ -196,7 +197,6 @@ home .search_form{
 #home .submit{
   float:right;
   margin-left: 10px;
-
 }
 
 #home .picture_box {
@@ -229,10 +229,11 @@ home .search_form{
 
 #home .after_check{
   height:300px;
-  background-color: #f5f5f5;
+  background-image: url(/images/circle_back.jpg);
   padding-bottom: 300px;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-bottom:15px;
 }
 
 #home .after_check h1{
