@@ -52,9 +52,9 @@ $(window).load(function () { //全ての読み込みが完了したら実行
     <div><%=image_tag "/images/home1.jpg",:size => "700x350"%></div>
     <div><%=image_tag "/images/home2.jpg",:size => "700x350"%></div>
   </div>
-
-<div class="new">
 <h2>新着情報</h2>
+<div class="new">
+
 <%unless @show_info.count < 6%>
 <p><%=link_to "and more...",homes_index_show_info_path%></p>
 <%end%>

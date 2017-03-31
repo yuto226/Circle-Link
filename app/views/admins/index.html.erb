@@ -1,13 +1,13 @@
   <div id="admin">
-    <p><%=current_admin.profile.username%>様</p>
-  <div class="name_space">
+  <h1><%=current_admin.profile.username%>様</h1>
   <%if @image.image.blank?%>
   <%=image_tag '/images/noimage.png',:size => "184x184"%>
   <%else%>
   <%=image_tag @image.image.to_s,:size=>"184x184"%>
   <%end%>
-</div>
-<p>あなたの投稿</p>
+
+
+<div>あなたの投稿</div>
 <div class="new">
   <%if @index.count==0%>
   <p>まだサークル情報の投稿がないみたいですね！</p>

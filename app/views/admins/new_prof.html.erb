@@ -50,10 +50,8 @@
 <div class="prof_pic">
   <div class="user_pic"><%=f.label :image,"ユーザー画像" %></div>
   <%=image_tag '/images/noimage.png',:size =>"180x180"%>
-  <%= f.file_field :image %>
-</div>
+  <em style="color:red;font-size:13px;">※縦:横=1:1が推奨です。<br>画像サイズの縦横比の差が大きい物は潰れて表示される可能性があります。</em>
 
 <div class="button2"><%=f.submit "確定"%></div>
-<em style="color:red;font-size:13px;">※縦:横=1:1が推奨です。<br>画像サイズの縦横比の差が大きい物は潰れて表示される可能性があります。</em>
 <%end%>
 </div>
