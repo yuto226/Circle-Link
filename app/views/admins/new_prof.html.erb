@@ -1,3 +1,4 @@
+<div id="admin_prof">
 <p>はじめまして！まずは団体情報を入力してください！</p>
 
 <%=form_for @new_prof,url:'/admins/create_profile' do |f|%>
@@ -12,52 +13,47 @@
   </div>
 <% end %>
 
-<div>
-  <%=f.label :"団体名"%>
-  <%=f.text_field :username%>
-</div>
+<div class="prof_text">
+<ul class="sample1">
+  <li><%=f.label :"団体名"%></li>
+  <p><%=f.text_field :username%></p>
 
-<div>
-  <%=f.label :"サークルのジャンルを選択してください。"%>
-  <%=f.select :genre_id,@genres.map{|t| [t.name, t.id]},:prompt => "選択してください"%>
-</div>
+  <li><%=f.label :"ジャンル"%></li>
+  <p><%=f.select :genre_id,@genres.map{|t| [t.name, t.id]},:prompt => "選択してください"%></p>
+  <li><%=f.label :"タイプ"%></li>
+  <p><%=f.select :kind_id,  @kinds.map{|t| [t.name, t.id]},:prompt => "選択してください"%></p>
+  <li><%=f.label :"活動人数"%></li>
+  <p><%=f.text_field :num%>人</p>
 
-<div>
-  <%=f.label :"紹介文をここに書いてください。"%>
-  <%=f.text_area :prof%>
-</div>
-<div>
-<%=f.label :image,"ユーザー画像" %>
-      <%= f.file_field :image %>
-    </div>
-<div>
-  <%=f.label :"活動人数"%>
-  <%=f.text_field :num%>人
-</div>
-<div>
-  <%=f.label :"活動場所"%>
-  <%=f.text_field :place%>
-</div>
-<div>
-  <%=f.label :"基本活動日時"%>
-  <%=f.select :week_day,SELECT_DAY,:prompt => "水"%>曜日
-  <%=f.select :time_start,SELECT_TIME%>〜
-  <%=f.select :time_end,SELECT_TIME,:prompt => "未定"%>
-</div>
+  <li><%=f.label :"活動場所"%></li>
+  <p><%=f.text_field :place%></p>
+
+  <li><%=f.label :"基本活動日時"%></li>
+  <p>
+    <%=f.select :week_day,SELECT_DAY,:prompt => "水"%>曜日
+    <%=f.select :time_start,SELECT_TIME%>〜
+    <%=f.select :time_end,SELECT_TIME,:prompt => "未定"%>
+  </p>
 
   <p>※第二活動日時がある方は入力してください！</p>
-  <div　class="day2_form">
-    <%=f.label :"基本活動日時2"%>
+  <li><%=f.label :"基本活動日時2"%></li>
+  <p>
     <%=f.select :week_day2,SELECT_DAY,:prompt => "土"%>曜日
     <%=f.select :time_start2,SELECT_TIME,:prompt => "選択してください"%>〜
     <%=f.select :time_end2,SELECT_TIME,:prompt => "未定"%>
+  </p>
+  <li><%=f.label :"紹介文"%></li>
+  <p><%=f.text_area :prof%></p>
+</ul>
 </div>
-<%=f.submit "確定"%>
-<%end%>
 
-<script type="text/javascript">
-$('.a').on('click',function(){
-  $(this).find('.day2_form').show();
-  $(this).hide();
-});
-</script>
+<div class="prof_pic">
+  <div class="user_pic"><%=f.label :image,"ユーザー画像" %></div>
+  <%=image_tag '/images/noimage.png',:size =>"184x184"%>
+  <%= f.file_field :image %>
+</div>
+
+<div class="button2"><%=f.submit "確定"%></div>
+<em style="color:red;font-size:13px;">※縦:横=1:1が推奨です。<br>画像サイズの縦横比の差が大きい物は潰れて表示される可能性があります。</em>
+<%end%>
+</div>

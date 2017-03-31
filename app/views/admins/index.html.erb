@@ -2,10 +2,10 @@
 <div id="contents">
   <div id="admin">
   <div class="name_space">
-  <%if @image.blank?%>
+  <%if @image.image.blank?%>
   <%=image_tag '/images/noimage.png'%>
   <%else%>
-  <%=image_tag @image%>
+  <%=image_tag @image.image.to_s,:size=>"184x184"%>
   <%end%>
 <%=current_admin.profile.username%>様
 

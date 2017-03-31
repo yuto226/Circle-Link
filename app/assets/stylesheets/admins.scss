@@ -1,6 +1,25 @@
 // Place all the styles related to the admins controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+#admin_form #error_explanation{
+  margin-left: 50%;
+}
+
+#admin_form .title_form{
+  margin:10px 0;
+}
+
+#admin_form .msg_area{
+  display: inline;
+  margin-right: 80%;
+  //background-color: red;
+}
+
+#admin_form .form_area{
+  margin-left: 40%;
+  //background-color: red;
+}
+
 .form_area{
   margin-left: 15px;
 }
