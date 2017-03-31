@@ -12230,12 +12230,6 @@ Copyright (c) 2012-2013 Sasha Koss & Rico Sta. Cruz
 
 
 }).call(this);
-
-
-$(document).ready(function(){
-	$('#header').after('<div>ヘッダの後ろ</div>');
-});
-console.log("aa");
 (function() {
 
 

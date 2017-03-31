@@ -1,20 +1,41 @@
 /* line 4, /home/unicast/circlelink/app/assets/stylesheets/admins.scss */
+#admin_form #error_explanation {
+  margin-left: 50%;
+}
+
+/* line 8, /home/unicast/circlelink/app/assets/stylesheets/admins.scss */
+#admin_form .title_form {
+  margin: 10px 0;
+}
+
+/* line 12, /home/unicast/circlelink/app/assets/stylesheets/admins.scss */
+#admin_form .msg_area {
+  display: inline;
+  margin-right: 80%;
+}
+
+/* line 18, /home/unicast/circlelink/app/assets/stylesheets/admins.scss */
+#admin_form .form_area {
+  margin-left: 40%;
+}
+
+/* line 23, /home/unicast/circlelink/app/assets/stylesheets/admins.scss */
 .form_area {
   margin-left: 15px;
 }
 
-/* line 8, /home/unicast/circlelink/app/assets/stylesheets/admins.scss */
+/* line 27, /home/unicast/circlelink/app/assets/stylesheets/admins.scss */
 .form_area input:focus {
   border: solid 1px red;
 }
 
-/* line 12, /home/unicast/circlelink/app/assets/stylesheets/admins.scss */
+/* line 31, /home/unicast/circlelink/app/assets/stylesheets/admins.scss */
 .prof_text {
   float: left;
   width: 55%;
 }
 
-/* line 17, /home/unicast/circlelink/app/assets/stylesheets/admins.scss */
+/* line 36, /home/unicast/circlelink/app/assets/stylesheets/admins.scss */
 .prof_text li {
   font-size: 20px;
   list-style: none;
@@ -23,7 +44,7 @@
   padding-right: 50px;
 }
 
-/* line 25, /home/unicast/circlelink/app/assets/stylesheets/admins.scss */
+/* line 44, /home/unicast/circlelink/app/assets/stylesheets/admins.scss */
 .prof_text li::after {
   position: absolute;
   bottom: 0;
@@ -35,24 +56,24 @@
   background-color: #b6f0fc;
 }
 
-/* line 36, /home/unicast/circlelink/app/assets/stylesheets/admins.scss */
+/* line 55, /home/unicast/circlelink/app/assets/stylesheets/admins.scss */
 .pfof_text p {
   padding-left: 100px;
 }
 
-/* line 39, /home/unicast/circlelink/app/assets/stylesheets/admins.scss */
+/* line 58, /home/unicast/circlelink/app/assets/stylesheets/admins.scss */
 .prof_pic {
   margin-top: 20px;
   text-align: center;
 }
 
-/* line 43, /home/unicast/circlelink/app/assets/stylesheets/admins.scss */
+/* line 62, /home/unicast/circlelink/app/assets/stylesheets/admins.scss */
 .user_pic {
   font-size: 20px;
   margin-bottom: 5px;
 }
 
-/* line 48, /home/unicast/circlelink/app/assets/stylesheets/admins.scss */
+/* line 67, /home/unicast/circlelink/app/assets/stylesheets/admins.scss */
 .button2 {
   margin-top: 60px;
   text-align: center;
@@ -194,21 +215,20 @@
   margin: 10px;
   background-color: #333;
   color: #fff;
-  background-image: "/images/home1.jpg";
 }
 
-/* line 118, /home/unicast/circlelink/app/assets/stylesheets/homes.scss */
+/* line 117, /home/unicast/circlelink/app/assets/stylesheets/homes.scss */
 #home .button:hover {
-  background-color: #59b1eb;
+  opacity: 0.5;
 }
 
-/* line 122, /home/unicast/circlelink/app/assets/stylesheets/homes.scss */
+/* line 121, /home/unicast/circlelink/app/assets/stylesheets/homes.scss */
 #home #show_details {
   margin-left: 30px;
   margin-bottom: 30px;
 }
 
-/* line 127, /home/unicast/circlelink/app/assets/stylesheets/homes.scss */
+/* line 126, /home/unicast/circlelink/app/assets/stylesheets/homes.scss */
 #home #show_details h1 {
   position: relative;
   padding: .5em .75em;
@@ -218,7 +238,7 @@
   margin: 0px 180px;
 }
 
-/* line 138, /home/unicast/circlelink/app/assets/stylesheets/homes.scss */
+/* line 137, /home/unicast/circlelink/app/assets/stylesheets/homes.scss */
 #home #show_details h1::before, h1::after {
   position: absolute;
   top: 100%;
@@ -229,34 +249,34 @@
   border: 10px solid transparent;
 }
 
-/* line 147, /home/unicast/circlelink/app/assets/stylesheets/homes.scss */
+/* line 146, /home/unicast/circlelink/app/assets/stylesheets/homes.scss */
 #home #show_details h1::before {
   border-top: 15px solid #ccc;
 }
 
-/* line 151, /home/unicast/circlelink/app/assets/stylesheets/homes.scss */
+/* line 150, /home/unicast/circlelink/app/assets/stylesheets/homes.scss */
 #home #show_details h1::after {
   margin-top: -2px;
   border-top: 15px solid #fff;
 }
 
-/* line 156, /home/unicast/circlelink/app/assets/stylesheets/homes.scss */
+/* line 155, /home/unicast/circlelink/app/assets/stylesheets/homes.scss */
 #home #show_details h1:first-letter {
   margin-right: .1em;
   font-size: 1.5em;
 }
 
-/* line 161, /home/unicast/circlelink/app/assets/stylesheets/homes.scss */
+/* line 160, /home/unicast/circlelink/app/assets/stylesheets/homes.scss */
 #home #show_details .image_zone {
   margin: 25px 180px;
 }
 
-/* line 165, /home/unicast/circlelink/app/assets/stylesheets/homes.scss */
+/* line 164, /home/unicast/circlelink/app/assets/stylesheets/homes.scss */
 #home #show_details .details_prof {
   margin: 0px 180px;
 }
 
-/* line 169, /home/unicast/circlelink/app/assets/stylesheets/homes.scss */
+/* line 168, /home/unicast/circlelink/app/assets/stylesheets/homes.scss */
 #home #show_details .details_prof ul, ol {
   background: #fcfcfc;
   /*背景色*/
@@ -266,7 +286,7 @@
   /*線の種類 太さ 色*/
 }
 
-/* line 175, /home/unicast/circlelink/app/assets/stylesheets/homes.scss */
+/* line 174, /home/unicast/circlelink/app/assets/stylesheets/homes.scss */
 #home #show_details .details_prof ul li {
   color: #CC0033;
   border-left: solid 6px #FF8856;
@@ -284,37 +304,37 @@
 }
 
 /*slick関連*/
-/* line 185, /home/unicast/circlelink/app/assets/stylesheets/homes.scss */
+/* line 184, /home/unicast/circlelink/app/assets/stylesheets/homes.scss */
 #home #main_slide {
   margin-left: 15%;
   margin-top: 15px;
   text-align: center;
 }
 
-/* line 190, /home/unicast/circlelink/app/assets/stylesheets/homes.scss */
+/* line 189, /home/unicast/circlelink/app/assets/stylesheets/homes.scss */
 home .search_form {
   height: 1000px;
 }
 
-/* line 194, /home/unicast/circlelink/app/assets/stylesheets/homes.scss */
+/* line 193, /home/unicast/circlelink/app/assets/stylesheets/homes.scss */
 #home .check_button {
   float: right;
 }
 
-/* line 197, /home/unicast/circlelink/app/assets/stylesheets/homes.scss */
+/* line 196, /home/unicast/circlelink/app/assets/stylesheets/homes.scss */
 #home .submit {
   float: right;
   margin-left: 10px;
 }
 
-/* line 203, /home/unicast/circlelink/app/assets/stylesheets/homes.scss */
+/* line 202, /home/unicast/circlelink/app/assets/stylesheets/homes.scss */
 #home .picture_box {
   float: left;
   padding-right: 10px;
   width: 15%;
 }
 
-/* line 209, /home/unicast/circlelink/app/assets/stylesheets/homes.scss */
+/* line 208, /home/unicast/circlelink/app/assets/stylesheets/homes.scss */
 #home figure img {
   -webkit-transform: scale(1);
   transform: scale(1);
@@ -322,26 +342,26 @@ home .search_form {
   transition: .2s ease-in-out;
 }
 
-/* line 215, /home/unicast/circlelink/app/assets/stylesheets/homes.scss */
+/* line 214, /home/unicast/circlelink/app/assets/stylesheets/homes.scss */
 #home figure:hover img {
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
 
-/* line 220, /home/unicast/circlelink/app/assets/stylesheets/homes.scss */
+/* line 219, /home/unicast/circlelink/app/assets/stylesheets/homes.scss */
 #home .picture_box figcaption {
   margin-top: 10px;
   text-align: center;
 }
 
-/* line 225, /home/unicast/circlelink/app/assets/stylesheets/homes.scss */
+/* line 224, /home/unicast/circlelink/app/assets/stylesheets/homes.scss */
 #home .picture_size {
   width: 185px;
   height: 185px;
   border: solid 1px gray;
 }
 
-/* line 231, /home/unicast/circlelink/app/assets/stylesheets/homes.scss */
+/* line 230, /home/unicast/circlelink/app/assets/stylesheets/homes.scss */
 #home .after_check {
   height: 300px;
   background-color: #f5f5f5;
@@ -350,7 +370,7 @@ home .search_form {
   margin-right: 20px;
 }
 
-/* line 239, /home/unicast/circlelink/app/assets/stylesheets/homes.scss */
+/* line 238, /home/unicast/circlelink/app/assets/stylesheets/homes.scss */
 #home .after_check h1 {
   position: relative;
   margin: 30px -1px;
