@@ -14,10 +14,12 @@
     <p class="notice"><%= notice %></p>
        <p class="alert"><%= alert %></p>
        <%if admin_signed_in?%>
-       <%=link_to "HOME",admins_index_path%>
-       <%=link_to "新しい投稿",admins_new_path%>
-       <%=link_to "プロフィール変更","/admins/edit_prof/#{current_admin.id}"%>
-       <%=link_to "ログアウト",destroy_admin_session_path%>
+       <ul>
+       <li><%=link_to "HOME",admins_index_path,:class=>"button"%></li>
+       <li><%=link_to "新しい投稿",admins_new_path,:class=>"button"%></li>
+       <li><%=link_to "プロフィール変更","/admins/edit_prof/#{current_admin.id}",:class=>"button"%></li>
+       <li><%=link_to "ログアウト",destroy_admin_session_path,:class=>"button"%></li>
+       <ul>
        <%end%>
 
      </div>

@@ -4,6 +4,7 @@
 #admin{
 margin-left: 40px;
 background-color: #f0f0f0;
+
 }
 
 #admin .new{
@@ -12,32 +13,27 @@ width: 500px;
 }
 
 #admin_form #error_explanation{
-  margin-left: 50%;
+  margin-left: 30%;
+  width:320px;
 }
 
 #admin_form .title_form{
   margin:10px 0;
+
 }
 
 #admin_form .msg_area{
-  display: inline;
-  margin-right: 80%;
+  margin-left: 20px;
+  //background-color: red;
+  width :350px;
+  //padding-top: 20%;
 }
-
-
-
 
 #admin_form .form_area{
   margin-left: 40%;
+  //background-color: red;
 }
 
-.form_area{
-  margin-left: 15px;
-}
-
-.form_area input:focus {
-    border:solid 1px red;
-}
 
 .prof_text{
   float: left;
@@ -66,12 +62,10 @@ width: 500px;
 .pfof_text p{
   padding-left: 100px;
 }
-
 .prof_pic{
   margin-top: 20px;
   text-align: center;
 }
-
 .user_pic{
   font-size: 20px;
   margin-bottom: 5px;

@@ -1,5 +1,5 @@
 <div id="admin_form">
-<%if @limit_msg%>
+<%if @limit_msg >= 1%>
 <%=form_for(@admin) do |f|%>
 <%if @new_event.errors.any? %>
   <div id="error_explanation">
@@ -13,6 +13,11 @@
   </div>
 <% end %>
 
+<div class="msg_area">
+  <p><em>ここからあなたの団体の情報を発信してみましょう！</em><br>
+    あなたはあと、<span style="color:blue"><%=@limit_msg%></span>件投稿できます！</p>
+</div>
+
 <div class="form_area">
 <div class="title_form">
   <%=f.label :"タイトル"%><br>
@@ -23,14 +28,10 @@
   <%=f.text_area :contents,:size=>"80x5", :placeholder => "私たち○○は、▲/△に、新入生歓迎会を行います！\n参加費は無料で、予約は必要ないのでぜひみなさん参加してください！"%>
 </div>
 </div>
-<div class="msg_area">
-  <p><em>ここからあなたの団体の情報を発信してみましょう！</em><br>
-    あなたはあと、<span style="color:blue"><%=@limit_msg%></span>件投稿できます！</p>
-</div>
 <%=f.submit%>
 <%end%>
 <%else%>
-<p>あなたはもう10件投稿したので、これ以上投稿することができません！<br>
+<p style="text-align:center;">あなたはもう10件投稿したので、これ以上投稿することができません！<br>
 新しい情報を発信するには、<%=link_to "削除",admins_index_path%>を行ってください。</p>
 <%end%>
 </div>

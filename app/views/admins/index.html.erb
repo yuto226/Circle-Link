@@ -1,13 +1,14 @@
-  <div id="admin">
-  <h1><%=current_admin.profile.username%>様</h1>
+<div id="admin">
+  <div class="textbox">
+  <h1>ようこそ　<%=current_admin.profile.username%>様</h1>
   <%if @image.image.blank?%>
-  <%=image_tag '/images/noimage.png',:size => "184x184"%>
+  <%=image_tag '/images/noimage.png',:size => "184x184",:class=>"index_pic"%>
   <%else%>
-  <%=image_tag @image.image.to_s,:size=>"184x184"%>
+  <%=image_tag @image.image.to_s,:size=>"184x184",:class=>"index_pic"%>
   <%end%>
 
-
-<div>あなたの投稿</div>
+<div class="contribution">
+<h3>あなたの投稿</h3>
 <div class="new">
   <%if @index.count==0%>
   <p>まだサークル情報の投稿がないみたいですね！</p>
@@ -24,6 +25,7 @@
 </ul>
 <%end%>
 </div>
-
+</div>
+</div>
 </div>
 <!--end of admin-->
