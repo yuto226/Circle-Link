@@ -1,0 +1,19 @@
+---
+development:
+  cloud_name: hrrtxjk58
+  api_key: '834858863955872'
+  api_secret: OOGFsmE4YMPSxoY8dfyUUAYayTs
+  enhance_image_tag: true
+  static_image_support: false
+production:
+  cloud_name: hrrtxjk58
+  api_key: '834858863955872'
+  api_secret: OOGFsmE4YMPSxoY8dfyUUAYayTs
+  enhance_image_tag: true
+  static_image_support: true
+test:
+  cloud_name: hrrtxjk58
+  api_key: '834858863955872'
+  api_secret: OOGFsmE4YMPSxoY8dfyUUAYayTs
+  enhance_image_tag: true
+  static_image_support: false

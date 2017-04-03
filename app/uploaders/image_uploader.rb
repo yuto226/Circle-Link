@@ -3,11 +3,16 @@ class ImageUploader < CarrierWave::Uploader::Base
   # Include RMagick or MiniMagick support:
   # リサイズしたり画像形式を変更するのに必要
    include CarrierWave::RMagick
+   include Cloudinary::CarrierWave
   # include CarrierWave::MiniMagick
 
   # Choose what kind of storage to use for this uploader:
   storage :file
   # storage :fog
+
+  def public_id
+    return Profile.id
+  end
 
   # Override the directory where uploaded files will be stored.
   # This is a sensible default for uploaders that are meant to be mounted:
