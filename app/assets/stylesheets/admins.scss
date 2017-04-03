@@ -2,14 +2,58 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 #admin{
-margin-left: 40px;
-background-color: #f0f0f0;
+    padding-top: 10px;
+    padding-bottom: 100px;
+  background-image: url(/images/admin_back.jpg);
+}
+#admin h1{
+    background-color: white;
+    position: relative;
+    margin: 1.0em 0 0.7em;
+    margin-right: 1.5em;
+    margin-left: 0.5em;
+    padding: 0.2em;
+    font-size: 3em; /* フォントサイズ */
+    font-weight: bold; /* フォント太さ */
+    color: #00008b; /* テキスト色 */
+    border: 3px solid #00bfff; /* 下線：太さ 線の種類 色 */
+}
+#admin h1:before,
+#admin h1:after{
+    content: '';
+    border-right: 18px solid #fff;
+    border-top: 15px solid #00bfff; /* 吹き出し部分の線の色 */
+    bottom: -15px;
+    position: absolute;
+    left: 26px;
+}
+#admin h1:after{
+    border-top-color: #fff;
+    border-right-color: transparent;
+    bottom: -11px;
+    left: 28px;
+}
+#admin .textbox{
+  margin-left: 15px;
+}
 
+#admin .index_pic{
+  float: left;
+  margin:15px 100px 50px 20px;
+  border: solid 1px gray;
+}
+
+#admin .contribution{
+  display: inline-block;
+  padding-bottom: 15px;
+  padding-top: 0px;
 }
 
 #admin .new{
-border: solid 1px;
+border: solid 2px gray;
 width: 500px;
+border-radius: 0.5em;
+background-color: white;
 }
 
 #admin_form #error_explanation{

@@ -1,7 +1,7 @@
 <div id="home">
-<div style="margin-left:20%">
-  <h2><%=image_tag'/images/all_info.png',:size => '109x50'%></h2>
-  <div class="topic" style="float:none;">
+  <div id="show_all">
+  <h2 style="margin-left:45%"><%=image_tag'/images/all_info.png',:size => '109x50'%></h2>
+  <div class="topic_all" style="float:none;">
     <%if @show_info.blank?%>
     <p>No DATA <br>please waiting... </p>
     <%else%>
@@ -20,6 +20,8 @@
   </table>
   <%end%>
   </div>
-
+  <div class="pagenate_area">
+  <%= paginate @show_info %>
+  </div>
 </div>
 </div>

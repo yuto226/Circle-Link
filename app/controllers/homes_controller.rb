@@ -8,7 +8,7 @@ class HomesController < ApplicationController
   end
 
   def show_info
-    @show_info=Article.all
+    @show_info=Article.page(params[:page]).per(10)
   end
 
   def show
