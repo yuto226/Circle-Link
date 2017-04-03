@@ -56,12 +56,13 @@ $(window).load(function () { //全ての読み込みが完了したら実行
 
 
   </div>
-<h2>新着情報</h2>
 <div class="new">
-
+<div class = "float">
+<h2>新着情報</h2>
 <%unless @show_info.count < 6%>
 <p><%=link_to "and more...",homes_index_show_info_path%></p>
 <%end%>
+</div>
 <div class="topic">
   <%if @show_info.blank?%>
   <p>No DATA <br>please waiting... </p>
@@ -81,7 +82,6 @@ $(window).load(function () { //全ての読み込みが完了したら実行
 </table>
 <%end%>
 </div>
-
 </div>
   <div class="link">
   <ul>

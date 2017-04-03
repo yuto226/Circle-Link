@@ -51,26 +51,30 @@ padding-bottom: 20px;
   font-size: 20px;
 
 }
-#home .new{
-  //background-color: red;
+
+#home .new .float{
+  margin-left: 15px;
+  //text-align: left;
+  //display: inline-block;
+  //width:40%;
 }
 
 #home .new h2{
-  margin-left: 15px;
-  text-align: left;
-  display: inline-block;
-  width:40%;
+  display: inline;
 }
 
 #home .new p{
   display: inline-block;
+  margin-left: 320px;
+  width:auto;
 }
 
 #home .topic{
+  margin-left: 20px;
   float: left;
   width: 50%;
   border:1px solid gray;
-
+  background-color: #FAF0E6;
 }
 
 #home .topic p{
