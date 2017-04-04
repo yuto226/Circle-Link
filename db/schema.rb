@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170404065702) do
+ActiveRecord::Schema.define(version: 20170404161047) do
 
   create_table "admins", force: :cascade do |t|
     t.string   "email",                  default: "", null: false
@@ -68,6 +68,7 @@ ActiveRecord::Schema.define(version: 20170404065702) do
     t.string   "time_end2"
     t.string   "kind_id"
     t.boolean  "pub_key",     default: false
+    t.boolean  "more_week",   default: false
   end
 
 end

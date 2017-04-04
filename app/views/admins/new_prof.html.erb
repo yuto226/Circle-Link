@@ -32,6 +32,7 @@
   <p><%=f.check_box :pub_key%></p>
 
   <li><%=f.label :"基本活動日時"%></li>
+</p>週3日以上活動のある団体はチェックをいれて第一活動日時の時間のみ入力してください。<%=f.check_box :more_week%></p>
   <p>
     <%=f.select :week_day,SELECT_DAY,:prompt => "水"%>曜日
     <%=f.select :time_start,SELECT_TIME%>〜
@@ -46,7 +47,7 @@
     <%=f.select :time_end2,SELECT_TIME,:prompt => "未定"%>
   </p>
   <li><%=f.label :"紹介文"%></li>
-  <p><%=f.text_area :prof,:placeholder=>"初心者大歓迎です。",:size => "60x5"%></p>
+  <p><%=f.text_area :prof,:placeholder=>"300文字以内で入力してください。例) 初心者大歓迎です。",:size => "60x5"%></p>
 </ul>
 </div>
 

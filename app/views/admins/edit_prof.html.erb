@@ -29,16 +29,18 @@
 
   <li><%=f.label :"活動人数"%></li>
   <p><%=f.text_field :num,:placeholder=>"人数を入力してください"%>人</p>
-  <li><%=f.label :"基本活動日時"%></li>
+  <li><%=f.label :"基本活動日時"%></li><br>
+</p>週3日以上活動のある団体はチェックをいれて第一活動日時の時間のみ入力してください。<%=f.check_box :more_week%></p>
   <p colspan="3">
-    <%=f.select :week_day,SELECT_DAY,:prompt => "水"%>曜日
+    <%=f.select :week_day,SELECT_DAY,:prompt => "未選択"%>曜日
     <%=f.select :time_start,SELECT_TIME%>〜
     <%=f.select :time_end,SELECT_TIME%>
   </p>
-  <p colspan="3">※↓第二活動日時がある方は入力してください！↓</p>
+  <p colspan="3">※↓第二活動日時がある方は入力してください！↓<br>
+  </p>
   <li><%=f.label :"基本活動日時2"%></li>
   <p colspan="3">
-    <%=f.select :week_day2,SELECT_DAY,:prompt => "土"%>曜日
+    <%=f.select :week_day2,SELECT_DAY,:prompt => "未選択"%>曜日
     <%=f.select :time_start2,SELECT_TIME%>〜
     <%=f.select :time_end2,SELECT_TIME%>
   </p>

@@ -13,9 +13,13 @@
 <ul>
     <li>活動場所: <%=@details.place%></li>
     <li>活動人数: <%=@details.num%></li>
+    <%if @details.more_week==true%>
+    <li>基本活動日時: 週３日以上<%=@details.time_start%>〜<%=@details.time_end%></li>
+    <%else%>
     <li>基本活動日時: 毎週<%=@details.week_day%>曜<%=@details.time_start%>〜<%=@details.time_end%></li>
     <%unless @details.week_day2.blank?%>
     <li>第二活動日時：　毎週<%=@details.week_day2%>曜<%=@details.time_start2%>〜<%=@details.time_end2%></li>
+    <%end%>
     <%end%>
     <li>サークル概要・説明: <%=@details.prof%></li>
     <%if @details.pub_key==true%>
