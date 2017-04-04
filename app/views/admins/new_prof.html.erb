@@ -16,17 +16,17 @@
 <div class="prof_text">
 <ul class="sample1">
   <li><%=f.label :"団体名"%></li>
-  <p><%=f.text_field :username%></p>
+  <p><%=f.text_field :username,:placeholder=>"〇〇同好会、〇〇部など"%></p>
 
   <li><%=f.label :"ジャンル"%></li>
   <p><%=f.select :genre_id,@genres.map{|t| [t.name, t.id]},:prompt => "選択してください"%></p>
   <li><%=f.label :"タイプ"%></li>
   <p><%=f.select :kind_id,  @kinds.map{|t| [t.name, t.id]},:prompt => "選択してください"%></p>
   <li><%=f.label :"活動人数"%></li>
-  <p><%=f.text_field :num%>人</p>
+  <p><%=f.text_field :num,:placeholder=>"人数を入力してください"%>人</p>
 
   <li><%=f.label :"活動場所"%></li>
-  <p><%=f.text_field :place%></p>
+  <p><%=f.text_field :place,:placeholder=>"グランド、サークル棟など"%></p>
 
   <li><%=f.label "連絡先を公開しますか？\n公開する場合のみチェックを入れてください。"%></li>
   <p><%=f.check_box :pub_key%></p>
@@ -46,7 +46,7 @@
     <%=f.select :time_end2,SELECT_TIME,:prompt => "未定"%>
   </p>
   <li><%=f.label :"紹介文"%></li>
-  <p><%=f.text_area :prof%></p>
+  <p><%=f.text_area :prof,:placeholder=>"初心者大歓迎です。",:size => "60x5"%></p>
 </ul>
 </div>
 
@@ -54,9 +54,9 @@
   <div class="user_pic"><%=f.label :image,"ユーザー画像" %></div>
   <%=image_tag '/images/noimage.png',:size =>"180x180"%><br>
   <%= f.file_field :image %><br>
-  <em style="color:red;font-size:13px;">※縦:横=1:1が推奨です。<br>画像サイズの縦横比の差が大きい物は潰れて表示される可能性があります。</em>
+  <em style="color:red;font-size:13px;">※縦:横=1:1が推奨です。<br>画像サイズの縦横比の差が大きい物は潰れて表示される可能性があります。<br>また、変更後の画像プレビューは表示されません。</em>
 </div>
 
-<div class="button2"><%=f.submit "確定"%></div>
+<div class="button2"><%=f.submit "確定",:class=>"button3"%></div>
 <%end%>
 </div>

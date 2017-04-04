@@ -1,5 +1,7 @@
-<h2>管理者ログイン</h2>
+<div id="admin">
+<h2 class="heading2">管理者ログイン</h2>
 
+<div class="login_box">
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
   <div class="field">
     <%= f.label :メールアドレス %><br />
@@ -12,8 +14,11 @@
   </div>
 
   <div class="actions">
-    <%= f.submit "ログイン" %>
+    <%= f.submit "ログイン",:class=>"button3" %>
   </div>
 <% end %>
-
-<%= render "devise/shared/links" %>
+<div class="unknown">
+<%= render "devise/shared/links"%>
+</div>
+</div>
+</div>
