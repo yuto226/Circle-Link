@@ -15,6 +15,9 @@
     <li>活動人数: <%=@details.num%></li>
     <li>基本活動日時: 毎週<%=@details.week_day%>曜<%=@details.time_start%>〜<%=@details.time_end%></li>
     <li>サークル概要・説明: <%=@details.prof%></li>
+    <%if @details.pub_key==true%>
+    <li>連絡先： <%=@details.admin.email%></li>
+    <%end%>
 </div>
 
 </div>

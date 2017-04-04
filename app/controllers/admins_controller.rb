@@ -1,6 +1,6 @@
 class AdminsController < ApplicationController
   before_action :authenticate_admin!
-  before_action :profile_exsiste?, only: [:new,:index]
+  before_action :profile_exsiste?, only: [:new,:index,:edit_prof]
 layout'admin'
 
   def index
@@ -98,7 +98,8 @@ end
     params.require(:article).permit([:title,:contents])
   end
   def admin_prof_params
-    params.require(:profile).permit([:prof,:username,:num,:place,:time_start,:time_end,:image,:genre_id,:kind_id])
+    params.require(:profile).permit([:prof,:username,:num,:place,:time_start,:time_end,
+      :image,:genre_id,:kind_id,:pub_key])
   end
   #認証系
   def profile_exsiste?

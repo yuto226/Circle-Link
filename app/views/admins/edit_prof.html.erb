@@ -24,6 +24,9 @@
   <p><%=f.select :kind_id,  @kinds.map{|t| [t.name, t.id]} %></p>
   <li><%=f.label :"活動場所"%></li>
   <p><%=f.text_field :place%></p>
+  <li><%=f.label "連絡先を公開しますか？\n公開する場合のみチェックを入れてください。"%></li>
+  <p><%=f.check_box :pub_key%></p>
+
   <li><%=f.label :"活動人数"%></li>
   <p><%=f.text_field :num%>人</p>
   <li><%=f.label :"基本活動日時"%></li>

@@ -53,8 +53,6 @@ $(window).load(function () { //全ての読み込みが完了したら実行
     <div><%=image_tag "/images/top_onepice.jpg",:size => "700x350"%></div>
     <div><%=image_tag "/images/top_sakura.jpeg",:size => "700x350"%></div>
     <div><%=image_tag "/images/top_umi4.png",:size => "700x350"%></div>
-
-
   </div>
 <div class="new">
 <div class = "float">
@@ -65,7 +63,7 @@ $(window).load(function () { //全ての読み込みが完了したら実行
 </div>
 <div class="topic">
   <%if @show_info.blank?%>
-  <p>No DATA <br>please waiting... </p>
+  <p style="text-align:center;">No DATA please waiting... </p>
   <%else%>
   <table>
     <tr>
