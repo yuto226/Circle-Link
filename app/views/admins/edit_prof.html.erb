@@ -23,7 +23,7 @@
   <li><%=f.label :"タイプ"%></li>
   <p><%=f.select :kind_id,  @kinds.map{|t| [t.name, t.id]} %></p>
   <li><%=f.label :"活動場所"%></li>
-  <p><%=f.text_field :place,:placeholder=>"グランド、サークル棟など"%></p>
+  <p><%=f.text_field :place,:placeholder=>"例）　茨城大学　水戸キャンパス　サークル棟"%></p>
   <li><%=f.label "連絡先を公開しますか？\n公開する場合のみチェックを入れてください。"%></li>
   <p><%=f.check_box :pub_key%></p>
 

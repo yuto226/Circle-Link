@@ -5,7 +5,7 @@ layout'admin'
 
   def index
     @index=Article.where(admin_id:current_admin.id)
-    @image=Profile.find(current_admin.id)
+    @image=Profile.find_by(admin_id:current_admin.id)
   end
 
   def show
@@ -75,18 +75,18 @@ def new_prof
 end
 
 def edit_prof
-  @update_prof=Profile.find(params[:id])
-  @edit_prof=Profile.find(params[:id])
+  @update_prof=Profile.find_by(admin_id:params[:id])
+  @edit_prof=Profile.find_by(admin_id:params[:id])
   @genres = Genre.all
   @kinds = Kind.all
 end
 
 def update_prof
-  @update_prof=Profile.find(params[:id])
+  @update_prof=Profile.find_by(admin_id:params[:id])
   if  @update_prof.update(admin_prof_params)
   redirect_to admins_index_path
 else
-  @edit_prof=Profile.find(params[:id])
+  @edit_prof=Profile.find_by(admin_id:params[:id])
  render :edit_prof, { edit_prof: @edit_prof }
 end
 end
@@ -99,7 +99,7 @@ end
   end
   def admin_prof_params
     params.require(:profile).permit([:prof,:username,:num,:place,:time_start,:time_end,
-      :image,:genre_id,:kind_id,:pub_key])
+      :image,:admin_id,:genre_id,:kind_id,:pub_key])
   end
   #認証系
   def profile_exsiste?

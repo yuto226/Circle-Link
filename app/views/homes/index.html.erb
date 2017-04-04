@@ -73,7 +73,7 @@ $(window).load(function () { //全ての読み込みが完了したら実行
     </tr>
   <%@show_info.each do |s|%>
   <tr>
-  <td><%=link_to s.admin.profile.username,homes_show_details_path(s.admin.profile.id)%></td>
+  <td><%=link_to s.admin.profile.username,homes_show_details_path(s.admin.id)%></td>
   <td><%=link_to s.title,"homes/show/#{s.id}"%></td>
   <td><%=s.created_at.to_s%></td>
   <%end%>

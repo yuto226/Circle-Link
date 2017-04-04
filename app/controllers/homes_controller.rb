@@ -1,6 +1,6 @@
 class HomesController < ApplicationController
   def show_details
-    @details=Profile.find(params[:id])
+    @details=Profile.find_by(admin_id:params[:id])
   end
 
   def index

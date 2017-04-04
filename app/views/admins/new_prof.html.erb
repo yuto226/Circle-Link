@@ -1,6 +1,6 @@
 <div id="admin_prof">
 <p>はじめまして！まずは団体情報を入力してください！</p>
-
+<%hidden_field :admin_id, current_admin.id%>
 <%=form_for @new_prof,url:'/admins/create_profile' do |f|%>
 <% if @create_prof.errors.any? %>
   <div id="error_explanation">
@@ -26,7 +26,7 @@
   <p><%=f.text_field :num,:placeholder=>"人数を入力してください"%>人</p>
 
   <li><%=f.label :"活動場所"%></li>
-  <p><%=f.text_field :place,:placeholder=>"グランド、サークル棟など"%></p>
+  <p><%=f.text_field :place,:placeholder=>"例）　茨城大学　水戸キャンパス　サークル棟"%></p>
 
   <li><%=f.label "連絡先を公開しますか？\n公開する場合のみチェックを入れてください。"%></li>
   <p><%=f.check_box :pub_key%></p>
@@ -38,7 +38,7 @@
     <%=f.select :time_end,SELECT_TIME,:prompt => "未定"%>
   </p>
 
-  <p>※第二活動日時がある方は入力してください！</p>
+  <p>※第二活動日時がある方は入力してください！<%=check_box '', '', {:class => "check_key"}, true, false%></p>
   <li><%=f.label :"基本活動日時2"%></li>
   <p>
     <%=f.select :week_day2,SELECT_DAY,:prompt => "土"%>曜日

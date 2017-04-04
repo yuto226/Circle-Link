@@ -1,6 +1,6 @@
 <div id="admin">
 <h2 class="heading2">管理者ログイン</h2>
-
+<p style="text-align:center;color:red;"><%= flash[:alert]%></p>
 <div class="login_box">
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
   <div class="field">
