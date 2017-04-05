@@ -99,7 +99,7 @@ end
   end
   def admin_prof_params
     params.require(:profile).permit([:prof,:username,:num,:place,:time_start,:time_end,
-      :time_start2,:time_end2,
+      :time_start2,:time_end2,:week_day,:week_day2,
       :image,:admin_id,:genre_id,:kind_id,:pub_key,:more_week])
   end
   #認証系
