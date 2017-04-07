@@ -28,6 +28,10 @@
     <%unless @details.twitter.blank?%>
     <li>Twitter:<%= link_to "@#{@details.twitter}","https://twitter.com/search?q=#{@details.twitter}",:target => "blank"%></li>
     <%end%>
+    <%unless @details.line_image.blank?%>
+    <li>LineQR:<%= image_tag @details.line_image.to_s,:size=>"30x30"%></li>
+    <%end%>
+
 </div>
 
 </div>

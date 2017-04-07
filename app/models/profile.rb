@@ -8,4 +8,5 @@ class Profile < ApplicationRecord
   validates :place, presence: true
 
   mount_uploader :image, ImageUploader
+  mount_uploader :line_image, ImageUploader
 end

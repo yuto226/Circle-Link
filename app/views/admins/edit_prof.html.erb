@@ -68,6 +68,11 @@
 <li><%=f.label :"Twitterアカウント"%></li><br><br>
 <em>※@以降のtwitterアカウント名を入力してください</em>
 <p>@<%=f.text_field :twitter,:placeholder => "Circle-Link-iba"%></p>
+
+<li>LineQR</li><br><br>
+<em>※LINEのQRコード専用ゾーンです。</em>
+<%=image_tag @edit_prof.line_image.to_s%>
+<p><%=f.file_field :line_image%></p>
 </div>
 
 <div class="button2"><%=f.submit "確定",:class=>"button3"%></div>
