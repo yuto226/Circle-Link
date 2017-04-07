@@ -59,6 +59,11 @@
   <em style="color:red;font-size:13px;">※縦:横=1:1が推奨です。<br>画像サイズの縦横比の差が大きい物は潰れて表示される可能性があります。<br>また、変更後の画像プレビューは表示されません。</em>
 </div>
 
+<div class="tweet_zone">
+<li><%=f.label :"Twitterアカウント"%></li><br><br>
+<em>※@以降のtwitterアカウント名を入力してください</em>
+<p>@<%=f.text_field :twitter,:placeholder => "Circle-Link-iba"%></p>
+</div>
 
 <div class="button2"><%=f.submit "確定",:class=>"button3"%></div>
 <%end%>
