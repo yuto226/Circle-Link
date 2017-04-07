@@ -30,7 +30,7 @@
 
   <li><%=f.label "連絡先を公開しますか？\n公開する場合のみチェックを入れてください。"%></li>
   <p><%=f.check_box :pub_key%></p>
-
+<div class="active_day">
   <li><%=f.label :"基本活動日時"%></li>
 </p>週3日以上活動のある団体はチェックをいれて第一活動日時の時間のみ入力してください。<%=f.check_box :more_week%></p>
   <p>
@@ -46,6 +46,7 @@
     <%=f.select :time_start2,SELECT_TIME,:prompt => "選択してください"%>〜
     <%=f.select :time_end2,SELECT_TIME,:prompt => "未定"%>
   </p>
+</div>
   <li><%=f.label :"紹介文"%></li>
   <p><%=f.text_area :prof,:placeholder=>"300文字以内で入力してください。例) 初心者大歓迎です。",:size => "60x5"%></p>
 </ul>
@@ -57,6 +58,7 @@
   <%= f.file_field :image %><br>
   <em style="color:red;font-size:13px;">※縦:横=1:1が推奨です。<br>画像サイズの縦横比の差が大きい物は潰れて表示される可能性があります。<br>また、変更後の画像プレビューは表示されません。</em>
 </div>
+
 
 <div class="button2"><%=f.submit "確定",:class=>"button3"%></div>
 <%end%>

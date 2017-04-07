@@ -25,6 +25,9 @@
     <%if @details.pub_key==true%>
     <li>連絡先： <%=@details.admin.email%></li>
     <%end%>
+    <%unless @details.twitter.blank?%>
+    <li>Twitter:<%= link_to "@#{@details.twitter}","https://twitter.com/search?q=#{@details.twitter}",:target => "blank"%></li>
+    <%end%>
 </div>
 
 </div>

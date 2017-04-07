@@ -164,6 +164,34 @@ background-color: white;
 .pfof_text p{
   padding-left: 100px;
 }
+
+.prof_text .active_day{
+  border: inset 1px blue;
+}
+
+#admin_prof .tweet_zone {
+  text-align: center;
+}
+
+#admin_prof .tweet_zone li{
+  font-size: 20px;
+  list-style: none;
+  float: left;
+  position: relative;
+  padding-right: 50px;
+}
+
+#admin_prof .tweet_zone li::after {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	z-index: -1;
+	content: '';
+	width: 70%;
+	height: 7px;
+	background-color: #b6f0fc;
+}
+
 .prof_pic{
   margin-top: 20px;
   text-align: center;

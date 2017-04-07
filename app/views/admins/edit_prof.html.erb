@@ -29,8 +29,9 @@
 
   <li><%=f.label :"活動人数"%></li>
   <p><%=f.text_field :num,:placeholder=>"人数を入力してください"%>人</p>
+<div class="active_day">
   <li><%=f.label :"基本活動日時"%></li><br>
-</p>週3日以上活動のある団体はチェックをいれて第一活動日時の時間のみ入力してください。<%=f.check_box :more_week%></p>
+<p>週3日以上活動のある団体はチェックをいれて第一活動日時の時間のみ入力してください。<%=f.check_box :more_week%></p>
   <p colspan="3">
     <%=f.select :week_day,SELECT_DAY,:prompt => "未選択"%>曜日
     <%=f.select :time_start,SELECT_TIME%>〜
@@ -44,10 +45,12 @@
     <%=f.select :time_start2,SELECT_TIME%>〜
     <%=f.select :time_end2,SELECT_TIME%>
   </p>
+</div>
   <li><%=f.label :"紹介文"%></li>
   <p><%=f.text_area :prof,:placeholder=>"初心者大歓迎です。",:size => "60x5"%></p>
 </ul>
 </div>
+
 <div class="prof_pic">
   <div class="user_pic"><%=f.label :image,"ユーザー画像" %></div>
   <%if @edit_prof.image.blank?%>
@@ -59,6 +62,12 @@
   <%= f.file_field :image %><br>
   <em style="color:red;font-size:13px;">※縦:横=1:1が推奨です。<br>画像サイズの縦横比の差が大きい物は潰れて表示される可能性があります。</em>
   <p>お気に入りの画像が見つからなかったら<%=link_to "こちら","http://www.onlinelogomaker.com/",:target=>["_blank"]%>で作成してみるのはいかがですか？</p>
+</div>
+
+<div class="tweet_zone">
+<li><%=f.label :"Twitterアカウント"%></li><br><br>
+<em>※@以降のtwitterアカウント名を入力してください</em>
+<p>@<%=f.text_field :twitter,:placeholder => "Circle-Link-iba"%></p>
 </div>
 
 <div class="button2"><%=f.submit "確定",:class=>"button3"%></div>
