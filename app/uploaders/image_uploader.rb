@@ -2,7 +2,7 @@ class ImageUploader < CarrierWave::Uploader::Base
 
   # Include RMagick or MiniMagick support:
   # リサイズしたり画像形式を変更するのに必要
-   include CarrierWave::RMagick
+   #include CarrierWave::RMagick
    include Cloudinary::CarrierWave
   # include CarrierWave::MiniMagick
 
@@ -58,7 +58,7 @@ class ImageUploader < CarrierWave::Uploader::Base
 
   # サムネイルを生成する設定
    version :thumb do
-     process :resize_to_fill => [40, 40, gravity = ::Magick::CenterGravity]
+    # process :resize_to_fill => [40, 40, gravity = ::Magick::CenterGravity]
    end
 
   # jpg,jpeg,gif,pngしか受け付けない
