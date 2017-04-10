@@ -13,7 +13,7 @@
     <div class="logo_space"><%=link_to (image_tag "/images/circle_log.png",{:size => "250x72"}),admins_index_path%></div>
        <%if admin_signed_in?%>
        <ul>
-       <li><%=link_to "HOME",admins_index_path,:class=>"button"%></li>
+       <li><%=link_to "　HOME　",admins_index_path,:class=>"button"%></li>
        <li><%=link_to "新しい投稿",admins_new_path,:class=>"button"%></li>
        <li><%=link_to "プロフィール変更","/admins/edit_prof/#{current_admin.id}",:class=>"button"%></li>
        <li><%=link_to "ログアウト",destroy_admin_session_path,:class=>"button"%></li>

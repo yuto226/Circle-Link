@@ -167,10 +167,12 @@ background-color: white;
 
 .prof_text .active_day{
   border: inset 1px blue;
+  width: 97%
 }
 
 #admin_prof .tweet_zone {
-  text-align: center;
+  text-align: left;
+  margin-left: 52%;
 }
 
 #admin_prof .tweet_zone li{
