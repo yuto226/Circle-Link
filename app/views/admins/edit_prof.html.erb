@@ -58,7 +58,6 @@
   <%else%>
   <%=image_tag @edit_prof.image.to_s,:size=>"184x184"%><br>
   <%end%>
-
   <%= f.file_field :image %><br>
   <em style="color:red;font-size:13px;">※縦:横=1:1が推奨です。<br>画像サイズの縦横比の差が大きい物は潰れて表示される可能性があります。<br>また、変更後の画像プレビューは表示されません</em>
   <!--<p>お気に入りの画像が見つからなかったら<%=link_to "こちら","http://www.onlinelogomaker.com/",:target=>["_blank"]%>で作成してみるのはいかがですか？</p>-->
@@ -67,11 +66,6 @@
     <ul><li><%=f.label :"Twitterアカウント"%></li>
     <p>@<%=f.text_field :twitter,:placeholder => "Circle-Link-iba"%></p>
     <em style="font-size:13px;">※@以降のtwitterアカウント名を入力してください</em><br><br>
-
-    <li>LineQR</li>
-    <!--<%=image_tag @edit_prof.line_image.to_s%>-->
-    <p><%=f.file_field :line_image%></p>
-    <em style="font-size:13px;">※LINEのQRコード専用ゾーンです。</em><br><br>
 
     <li><%=f.label "連絡先の公開"%></li></ul><br><br>
     登録時のメールアドレスを公開する場合のみチェックしてください<%=f.check_box :pub_key%>
