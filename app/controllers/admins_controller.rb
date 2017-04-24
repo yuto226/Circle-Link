@@ -103,7 +103,7 @@ end
       :time_start2,:time_end2,:week_day,:week_day2,
       :twitter,:line_image,:image,
       :admin_id,:genre_id,:kind_id,
-      :pub_key,:more_week])
+      :pub_key,:more_week,:have_second_week])
   end
   #認証系
   def profile_exsiste?

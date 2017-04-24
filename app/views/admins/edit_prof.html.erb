@@ -33,16 +33,16 @@
 <p>週3日以上活動のある団体はチェックをいれて第一活動日時の時間のみ入力してください。<%=f.check_box :more_week%></p>
   <p colspan="3">
     <%=f.select :week_day,SELECT_DAY,:prompt => "未選択"%>曜日
-    <%=f.select :time_start,SELECT_TIME%>〜
-    <%=f.select :time_end,SELECT_TIME%>
+    <%=f.text_field :time_start,:size => "2",:placeholder => "12:00"%>〜
+    <%=f.text_field :time_end,:size => "2",:placeholder => "18:00"%>
   </p>
-  <p colspan="3">※↓第二活動日時がある方は入力してください！↓<br>
+  <p colspan="3">※↓第二活動日時がある方はチェックを入れて入力してください！↓<br><%=f.check_box :have_second_week, {:class => "check_key"}%>
   </p>
-  <li><%=f.label :"基本活動日時2"%></li>
+  <li><%=f.label :"基本活動日時2"%></li><br>
   <p colspan="3">
     <%=f.select :week_day2,SELECT_DAY,:prompt => "未選択"%>曜日
-    <%=f.select :time_start2,SELECT_TIME%>〜
-    <%=f.select :time_end2,SELECT_TIME%>
+    <%=f.text_field :time_start2,:size => "2",:placeholder => "12:00"%>〜
+    <%=f.text_field :time_end2,:size => "2",:placeholder => "18:00"%>
   </p>
 </div>
 

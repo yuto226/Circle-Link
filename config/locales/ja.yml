@@ -5,3 +5,9 @@ ja:
     prof: 紹介文
     genre: ジャンル選択
     kind: タイプ
+    week_day: 第一活動曜日
+    time_start: 第一活動開始時間
+    time_end: 第一活動終了時間
+    time_start2: 第二活動開始時間
+    time_end2: 第二活動終了時間
+    week_day2: 第二活動曜日

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170407133648) do
+ActiveRecord::Schema.define(version: 20170424115059) do
 
   create_table "admins", force: :cascade do |t|
     t.string   "email",                  default: "", null: false
@@ -53,23 +53,24 @@ ActiveRecord::Schema.define(version: 20170407133648) do
     t.text     "prof"
     t.integer  "num"
     t.string   "place"
-    t.datetime "created_at",                  null: false
-    t.datetime "updated_at",                  null: false
+    t.datetime "created_at",                       null: false
+    t.datetime "updated_at",                       null: false
     t.integer  "admin_id"
     t.integer  "genre_id"
     t.string   "image"
     t.string   "time_start"
-    t.string   "time_end",    default: ""
+    t.string   "time_end",         default: ""
     t.string   "username"
     t.string   "week_day"
     t.string   "week_day2"
     t.string   "time_start2"
     t.string   "time_end2"
     t.string   "kind_id"
-    t.boolean  "pub_key",     default: false
-    t.boolean  "more_week",   default: false
-    t.string   "twitter",     default: ""
+    t.boolean  "pub_key",          default: false
+    t.boolean  "more_week",        default: false
+    t.string   "twitter",          default: ""
     t.string   "line_image"
+    t.boolean  "have_second_week", default: false
   end
 
 end
