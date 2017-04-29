@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   get '/neets' => 'neets#index'
   get 'neets/show'
   get '/neets/circle'
+  get '/neets/bbb',as: :bbb
   #homes
   resources:homes ,:except => [:show]
   get 'homes/show/:id' => 'homes#show'
