@@ -1,9 +1,14 @@
 Rails.application.routes.draw do
+  get 'neet_profs/index'
+
+  get 'neet_profs/show'
+
   root 'homes#index'
   #neets
   get '/neets' => 'neets#index'
   get 'neets/show'
   get '/neets/circle'
+  get '/neet_profs/:id', to: 'neet_profs#index'
   #homes
   resources:homes ,:except => [:show]
   get 'homes/show/:id' => 'homes#show'

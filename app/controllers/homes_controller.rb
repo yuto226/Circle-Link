@@ -1,4 +1,5 @@
 class HomesController < ApplicationController
+  layout 'application'
   def show_details
     @details=Profile.find(params[:id])
   end

@@ -1,4 +1,4 @@
-<div id = "neet_lists">
+
 <!-- ドロップバー設置 -->
  <div class = "menu">
  <ul>
@@ -31,24 +31,29 @@
     </ul>
     </div>
     <br><br><br><br><br>
-  
 
+<p class = "janru_name"><%= @data[1].to_s + '/' + @data[0].to_s %></p>
+<p class = "name"><%= @data[0].to_s %></p>
 
-
-<p>ニート紹介</p>
-
-
-<!-- ニート一覧 -->
-<p class = "neet_list">
-<% @neet_data.each_with_index do |f,i| %>
-<%=link_to (image_tag '/images/' + f.to_s ,{:size => "300x300"}),
-'/neet_profs/' + (i+1).to_s  %>
-
-<%end%>
-
-</p>
-
+<div class = "top_pic">
+<%= image_tag '/images/' + @data[2].to_s ,:size => '0x400'%>
 </div>
 
 
+<p class = "base">自己紹介をお願いします</p>
+<p><%= @data[5].to_s %></p>
+<p class = "base">趣味は何ですか？？</p>
+<p><%= @data[6].to_s %></p>
+
+<!-- 趣味の写真がある場合-->
+<!--
+<div class = "sub_pic1">
+<%= image_tag '/images/' + @data[3].to_s ,:size => '400x400'%>
+<%= image_tag '/images/' + @data[4].to_s,:size => '400x400'%>
+</div>
+
+-->
+
+<p class = "base">将来の夢は何ですか？？</p>
+<p><%= @data[7].to_s %></p>
 

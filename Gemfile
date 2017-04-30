@@ -1,9 +1,10 @@
-source 'https://rubygems.org'
+﻿source 'https://rubygems.org'
 
 
 gem 'kaminari'
 gem 'rails-i18n'
-gem 'rmagick'
+#gem 'rmagick'
+
 gem 'carrierwave'
 gem 'fog'
 gem 'devise'

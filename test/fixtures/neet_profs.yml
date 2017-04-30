@@ -1,0 +1,31 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  neet_id: 1
+  top_pic: MyString
+  : MyText
+  sub_pic1: MyString
+  : MyText
+  sub_pic2: MyString
+  : MyText
+  hoby: MyString
+  : MyText
+  intraction: MyString
+  : MyText
+  goal: MyString
+  : MyText
+
+two:
+  neet_id: 1
+  top_pic: MyString
+  : MyText
+  sub_pic1: MyString
+  : MyText
+  sub_pic2: MyString
+  : MyText
+  hoby: MyString
+  : MyText
+  intraction: MyString
+  : MyText
+  goal: MyString
+  : MyText

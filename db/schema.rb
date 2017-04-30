@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170328132146) do
+ActiveRecord::Schema.define(version: 20170426053822) do
 
   create_table "admins", force: :cascade do |t|
     t.string   "email",                  default: "", null: false
@@ -25,7 +25,6 @@ ActiveRecord::Schema.define(version: 20170328132146) do
     t.string   "last_sign_in_ip"
     t.datetime "created_at",                          null: false
     t.datetime "updated_at",                          null: false
-    t.integer  "limit",                  default: 5
     t.index ["email"], name: "index_admins_on_email", unique: true
     t.index ["reset_password_token"], name: "index_admins_on_reset_password_token", unique: true
   end
@@ -46,6 +45,27 @@ ActiveRecord::Schema.define(version: 20170328132146) do
 
   create_table "kinds", force: :cascade do |t|
     t.string   "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "neet_profs", force: :cascade do |t|
+    t.text     "top_pic"
+    t.text     "sub_pic1"
+    t.text     "sub_pic2"
+    t.text     "hoby"
+    t.text     "intraction"
+    t.text     "goal"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.integer  "neet_id"
+    t.text     "name"
+    t.text     "janru"
+  end
+
+  create_table "neets", force: :cascade do |t|
+    t.text     "name"
+    t.text     "prof_pic"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

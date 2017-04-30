@@ -1,0 +1,3 @@
+class NeetProf < ApplicationRecord
+  
+end

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Circlelink</title>
+    <%= csrf_meta_tags %>
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+  <body style = "background: #000033">
+
+    
+         <div class="logo_space"><%=link_to (image_tag "/images/neet_logo.png",{:size => "150x150"}),homes_path%>
+         </div>
+       
+
+        
+     
+
+      <%= yield %>
+
+    <div id="hutter">
+      
+      <div class="logo_space"><%=link_to (image_tag "/images/circle_log.png",{:size => "200x60"}),homes_path%></div>
+    </div>
+    <%=yield :javascript_after%>
+  </body>
+</html>

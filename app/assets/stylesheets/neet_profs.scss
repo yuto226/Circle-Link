@@ -1,0 +1,36 @@
+// Place all the styles related to the Neet_profs controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+body{
+    color: white;
+    font-size: 11pt;
+    margin: 5px 10px;
+
+}
+
+p.base{
+padding: 0.5em;
+color:black;
+background:#8b0000;
+border-left: solid 7px #4d4d4d;
+font-size: 15pt;
+}
+p.name{
+    zoom: 150%;
+    font-family: "ＭＳ Ｐ明朝","ＭＳ 明朝",serif;
+}
+div.top_pic img{
+    display: block;
+    width: 50%;
+    margin: 0 auto; 
+    border-radius: 50%;  
+}
+
+/*
+p.sub_pic1 img{
+    width:70%;
+}
+p.sub_pic2 img{
+    width:70%;
+}
+*/

@@ -1,0 +1,3 @@
+class Neet < ApplicationRecord
+    
+end
