@@ -15,8 +15,8 @@
  */
 
  #home{
- //margin-left:15px;
- background: url(/images/sakura2.gif);
+ /*margin-left:15px;*/
+ /*background: url(/images/sakura2.gif);*/
  }
  #home #msg{
    display: block;
@@ -37,25 +37,61 @@
 
  body{
    width: 1000px;
+   margin: 0px;
+   /*width:100%;*/
  }
  #header{
-   height :80px;
+   height :145px;
+   background-image: url(/images/header_footer1.jpg);
     border-bottom: 1px solid gray;
-
+    margin-bottom: 0px;
  }
- #header .logo_space {
-  float: left;
-  padding-right: 20px;
-
+#header .logo_space {
+  margin: 25px 30px;
+  padding: 5px 10px;
+  line-height: 100px;
+  display: inline-block;
+  border:1px solid white;
+  border-radius: 50px;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+  background: white;
+   box-shadow:0px 0px 5px 3px rgba(0, 0, 0, 0.2) inset;
 }
-#header li{
-  font-size: 25px;
-  float:left;
+
+#menu ul{
+  background: linear-gradient(to bottom,#ffffff, #dcdcdc);
+  height: 55px;
+  margin:0;
+  font-size: 0px;
+  padding-left: 0;
+  padding: 10px 0;
+}
+#menu ul a{
+  display: block;
+  color: #708090;
+  font-family: 'Lato', helvetica, arial, sans-serif;
+}
+#menu ul a:hover{
+  color: #00bfff;
+}
+
+
+#menu li{
+  box-sizing: border-box;
+  font-size: 20px;
+  line-height: 55px;
+  display: inline-block;
   list-style: none;
-  padding: 5px;
+  width: 25%;
+  text-align: center;
+}
+#menu li+li{
+  border-left:2px solid #999;
 }
 
-#header .button {
+
+/*#header .button {
     width:150px;
     font-size:15px;
     font-weight:bold;
@@ -72,7 +108,7 @@
   border: 2px solid #49a9d4;
   border-radius:10px;
   color:#49a9d4;
-}
+}*/
 
 #header .home{
   width:700px;
@@ -89,8 +125,9 @@
 
 #hutter{
   border-top:1px solid gray;
-  width: 1000px;
+  height: 150px;
   clear:left;
+  background-image: url(/images/header_footer1.jpg);
 }
 #hutter .login{
   margin-top:10px;
@@ -102,9 +139,18 @@
   padding:0px 5px;
 
 }
-
+#hutter .login_text{
+  color: white;
+}
 #hutter .logo_space{
   display: block;
   width:200px;
-  margin-left:auto;
+  padding:5px 10px;
+  margin: 25px 35px 20px auto;
+  border:1px solid white;
+  border-radius: 50px;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+  background: white;
+   box-shadow:0px 0px 5px 3px rgba(0, 0, 0, 0.2) inset;
 }

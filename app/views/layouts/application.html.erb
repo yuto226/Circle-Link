@@ -19,22 +19,24 @@
   <body>
 
        <div id="header">
-         <div class="logo_space"><%=link_to (image_tag "/images/circle_log.png",{:size => "250x72"}),homes_path%></div>
+         <div><%=link_to (image_tag "/images/circle_log.png",{:size => "250x72",:class=>"logo_space"}),homes_path%></div>
+       </div>
+       <div id="menu">
            <ul>
-             <li><%=link_to "　HOME　",homes_path,{:class =>"button"}%></li>
-             <li><%=link_to "情報一覧",homes_index_show_info_path,{:class =>"button"}%></li>
-             <li><%=link_to "サークル・部活一覧",homes_circle_path,{:class=>"button"}%></li>
-             <li><%=link_to "Others",neets_path,{:class=>"button"}%></li>
+             <li><%=link_to "　HOME　",homes_path,{:style=>"text-decoration:none;"}%></li>
+             <li><%=link_to "新着情報",homes_index_show_info_path,{:style=>"text-decoration:none;"}%></li>
+             <li><%=link_to "サークル・部活一覧",homes_circle_path,{:style=>"text-decoration:none;"}%></li>
+             <li><%=link_to "Neoニートとは！？",neets_path,{:style=>"text-decoration:none;"}%></li>
            </ul>
-     </div>
+         </div>
 
     <%= yield %>
 
     <div id="hutter">
       <ul class="login">
-        <li><%=link_to "管理者ログイン",admin_session_path%></li>
+        <li><%=link_to "管理者ログイン",admin_session_path,{:class=>"login_text"}%></li>
       </ul>
-      <div class="logo_space"><%=link_to (image_tag "/images/circle_log.png",{:size => "200x60"}),homes_path%></div>
+      <div><%=link_to (image_tag "/images/circle_log.png",{:size => "200x60",:class=>"logo_space"}),homes_path%></div>
     </div>
     <%=yield :javascript_after%>
   </body>
