@@ -1,4 +1,60 @@
-<div style="margin:50px 300px;">
+<div id = "neet_lists">
+<!-- ドロップバー設置 -->
+ <div class = "menu">
+ <ul>
+    <li class="nav-item">
+        <a class = "nav-title js-dropdown" href = "/neets">ネオニートとは</a>
+            <ul class = "panel-inner">
+                <li class = "panel-item"><a href = "/neets/circle">紹介文</a></li>
+            </ul>
+        </li>
+    <li class="nav-item">
+        <a class = "nav-title js-dropdown" href = "/neets/show">メンバー</a>
+            <ul class = "panel-inner">
+                <li class = "panel-item"><a href = "/neet_profs/1">ゆ～と</a></li>
+                <li class = "panel-item"><a href = "/neet_profs/2">さとし</a></li>
+                <li class = "panel-item"><a href = "/neet_profs/3">燃費</a></li>
+                <li class = "panel-item"><a href = "/neet_profs/4">あっちゃん</a></li>
+                <li class = "panel-item"><a href = "/neet_profs/5">さくちん</a></li>
+            </ul>
+        </li>
+        <li class="nav-item">
+        <a class = "nav-title js-dropdown" href = "#">どこのページに行く？？</a>
+
+            <ul class = "panel-inner">
+                <li class = "panel-item"><a href = "/homes">ホーム</a></li>
+                <li class = "panel-item"><a href = "/homes/circle">サークル一覧</a></li>
+                 <li class = "panel-item"><a href = "/neets/show">メンバー一覧</a></li>
+
+            </ul>
+    </li>
+    </ul>
+    </div>
+    <br><br><br><br><br>
+
+
+
+
+<p>ニート紹介</p>
+
+
+<!-- ニート一覧 -->
+<p class = "neet_list">
+<% @neet_data.each_with_index do |f,i| %>
+<%=link_to (image_tag '/images/' + f.to_s ,{:size => "300x300"}),
+'/neet_profs/' + (i+1).to_s  %>
+
+<%end%>
+
+</p>
+
+</div>
+
+
+
+
+<!--<div style="margin:50px 300px;">
   <%=image_tag '/images/waiting.png',:size => '400x300'%>
 <p style="text-align:center;">※もうしばらくお待ちください※</p>
 </div>
+-->
