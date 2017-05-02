@@ -16,6 +16,112 @@
 #neets .neet_list ul{
   list-style: none;
 }
+
+#neet_lists {
+    color: white;
+    background-color: #696969;
+    font-size: 11pt;
+    margin: 5px 10px;
+    text-align: center;
+}
+
+#neet_lists p.base{
+padding: 0.5em;
+color:black;
+background:#8b0000;
+border-left: solid 7px #4d4d4d;
+font-size: 15pt;
+}
+#neet_lists p.name{
+    zoom: 150%;
+    font-family: "ＭＳ Ｐ明朝","ＭＳ 明朝",serif;
+}
+#neet_lists div.top_pic img{
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
+//ドロップバー作成
+#neet_lists .menu ul{
+  margin:0;
+  padding:0;
+}
+#neet_lists .menu ul li {
+  list-style: none;
+  margin:0;
+  padding:0;
+  font-size:14px;
+  float: left;
+  position: relative;
+  width: 33%;/*親メニューの幅*/
+  height: 40px;/*親メニューの高さ*/
+  line-height: 40px;
+  background:#000000;/*親メニューの背景色*/
+  color: #FFFFFF;/*親メニューの文字色*/
+  text-align:center;
+  font-weight:bold;
+}
+#neet_lists .menu ul li a {
+  color: #dc143c;
+  display: block;
+  text-decoration: none;
+}
+#neet_lists .menu ul li:hover, .menu ul li a:hover {
+  background:#4d4d4d;/*ホバー時の親メニューの背景色*/
+  color:#a9a9a9;/*ホバー時の親メニューの文字色*/
+}
+#neet_lists .menu ul li ul {
+  position: absolute;
+  top: 40px;/*親メニューの高さと同じにする*/
+  width: 100%;
+  z-index: 100;
+}
+#neet_lists .menu ul li ul li {
+  visibility: hidden;
+  overflow: hidden;
+  width: 100%;/*サブメニューの幅*/
+  height: 0;
+  background:#c0c0c0;/*サブメニューの背景色*/
+}
+#neet_lists .menu ul li ul li:hover, .menu ul li ul li a:hover {
+  background:#c0c0c0;/*ホバー時のサブメニューの背景色*/
+  color:#000;/*ホバー時の親メニューの文字色*/
+}
+#neet_lists .menu ul li:hover ul li, .menu ul li a:hover ul li{
+  visibility: visible;
+  overflow: visible;
+  height:40px;/*サブメニューの高さ*/
+  z-index: 100;
+}
+#neet_lists .menu * {
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+//画像をセンターに
+#neet_lists .neet_list {
+  display: block;
+  border: 1px solid #FF0000;
+  margin: 0 auto;
+}
+
+//画像のぼかし
+#neet_lists figure img {
+	-webkit-filter: blur(3px);
+	filter: blur(3px);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+#neet_lists figure:hover img {
+	-webkit-filter: blur(0);
+	filter: blur(0);
+}
+
 #bbb h1{
   position: relative;
   padding: 5px 26px 5px 30px;
