@@ -8,4 +8,7 @@ class NeetsController < ApplicationController
   def circle
 
   end
+  def bbb
+
+  end
 end

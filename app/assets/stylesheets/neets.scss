@@ -10,8 +10,51 @@
 }
 #neets .neet_list{
   display: table-cell;
+  text-align: center;
 }
 
 #neets .neet_list ul{
   list-style: none;
+}
+#bbb h1{
+  position: relative;
+  padding: 5px 26px 5px 30px;
+  background: #fff0d9;
+  //font-size: 20px;
+  color: #2d2d2d;
+  margin-left: 33px;
+  line-height: 1.3;
+  border-bottom: solid 3px orange;
+  z-index:-2;
+  text-align: center;
+  color: #FFB6C1;
+}
+
+#bbb p{
+    position: relative;
+    //text-align: center;
+    background: #fcfcfc;
+    font-size: 16pt ;
+    border: 3px solid #ff6347;
+    margin: 10px 350px 23px 50px;
+    padding: 10px 5px 10px 10px;
+    border-radius: 3px;
+    box-shadow:1px 3px 7px 0px  #666666 ;
+}
+#bbb p:after, #bbb p:before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    height: 0;
+    width: 0;
+}
+#bbb p:after {
+    left: 40px;
+    border: 10px solid transparent;
+    border-top: 10px solid #fcfcfc;
+}
+#bbb p:before {
+    left: 37px;
+    border: 13px solid transparent;
+    border-top: 13px solid #ff6347;
 }
