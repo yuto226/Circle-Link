@@ -21,6 +21,7 @@
        <div id="header">
          <div><%=link_to (image_tag "/images/circle_log.png",{:size => "250x72",:class=>"logo_space"}),homes_path%></div>
        </div>
+       <%unless neets_controller?%>
        <div id="menu">
            <ul>
              <li><%=link_to "　HOME　",homes_path,{:style=>"text-decoration:none;"}%></li>
@@ -29,7 +30,7 @@
              <li><%=link_to "Neoニートとは！？",neets_path,{:style=>"text-decoration:none;"}%></li>
            </ul>
          </div>
-
+         <%end%>
     <%= yield %>
 
     <div id="hutter">
