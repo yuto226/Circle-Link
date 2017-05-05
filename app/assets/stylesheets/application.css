@@ -23,11 +23,6 @@
    text-align: center;
  }
 
- #home #msg h2{
-   display: none;
-   color:#CC99CC;
- }
-
  #error_explanation{
    width: 600px;
    color: red;
