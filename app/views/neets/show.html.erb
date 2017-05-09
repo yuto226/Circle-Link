@@ -1,4 +1,28 @@
-<div style="margin:50px 300px;">
+<div id = "neet_lists">
+<!-- ドロップバー設置 -->
+    <%=render :partial => 'neets_header'%>
+     <br><br><br><br><br>
+
+<p>ニート紹介</p>
+
+
+<!-- ニート一覧 -->
+<p class = "neet_list">
+<% @neet_data.each do |f| %>
+<%=link_to (image_tag '/images/' + f.to_s ,{:size => "300x300"}),
+'neet_profs/' + f.to_s.delete!(".png")  %>
+
+<%end%>
+
+</p>
+
+</div>
+
+
+
+
+<!--<div style="margin:50px 300px;">
   <%=image_tag '/images/waiting.png',:size => '400x300'%>
 <p style="text-align:center;">※もうしばらくお待ちください※</p>
 </div>
+-->

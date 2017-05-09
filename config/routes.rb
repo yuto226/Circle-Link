@@ -1,10 +1,13 @@
 Rails.application.routes.draw do
+  get 'others/bbb'
+
   root 'homes#index'
   #neets
-  get '/neets' => 'neets#index'
+  get '/neets' => 'homes#neets_list'
   get 'neets/show'
-  get '/neets/circle'
-  get '/neets/bbb',as: :bbb
+  get '/neets/circle' => 'others#circle'
+  get '/neets/neet_profs/:id' => 'neets#prof',as: 'neets_profs'
+  get '/neets/bbb' => 'others#bbb' ,as: :bbb
   #homes
   resources:homes ,:except => [:show]
   get 'homes/show/:id' => 'homes#show'

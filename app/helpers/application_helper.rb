@@ -6,4 +6,8 @@ module ApplicationHelper
       return false
     end
   end
+
+  def neets_controller?
+    controller.controller_name == 'neets'
+  end
 end

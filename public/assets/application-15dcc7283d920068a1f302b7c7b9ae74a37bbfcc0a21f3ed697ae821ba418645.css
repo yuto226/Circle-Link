@@ -1,0 +1,1048 @@
+@charset "UTF-8";
+/* line 4, /home/unicast/circlelink/app/assets/stylesheets/admins.scss */
+#admin {
+  padding-top: 10px;
+  padding-bottom: 100px;
+  background-image: url(/images/admin_back.jpg);
+}
+
+/* line 10, /home/unicast/circlelink/app/assets/stylesheets/admins.scss */
+#admin h2 {
+  position: relative;
+  color: #111;
+  font-size: 25px;
+  font-weight: bold;
+  margin: 10px 30px 30px;
+  padding: 0.5em 0.5em 0.5em 1.7em;
+  border-bottom: 3px solid #B92A2C;
+}
+
+/* line 20, /home/unicast/circlelink/app/assets/stylesheets/admins.scss */
+#admin h2:before {
+  content: "";
+  position: absolute;
+  background: #d48789;
+  top: 0;
+  left: 0.4em;
+  height: 12px;
+  width: 12px;
+  transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+}
+
+/* line 35, /home/unicast/circlelink/app/assets/stylesheets/admins.scss */
+#admin h2:after {
+  content: "";
+  position: absolute;
+  background: #d26466;
+  top: 1.0em;
+  left: 0;
+  height: 8px;
+  width: 8px;
+  transform: rotate(15deg);
+  -moz-transform: rotate(15deg);
+  -webkit-transform: rotate(15deg);
+  -o-transform: rotate(15deg);
+  -ms-transform: rotate(15deg);
+}
+
+/* line 50, /home/unicast/circlelink/app/assets/stylesheets/admins.scss */
+#admin .login_box {
+  border: solid 2px gray;
+  border-radius: 0.5em;
+  text-align: center;
+  padding: 40px 0px;
+  margin: 15px 250px;
+  background-color: white;
+}
+
+/* line 59, /home/unicast/circlelink/app/assets/stylesheets/admins.scss */
+#admin .field {
+  padding-top: 20px;
+}
+
+/* line 62, /home/unicast/circlelink/app/assets/stylesheets/admins.scss */
+#admin .actions {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+/* line 67, /home/unicast/circlelink/app/assets/stylesheets/admins.scss */
+#admin h1 {
+  background-color: white;
+  position: relative;
+  margin: 1.0em 0 0.7em;
+  margin-right: 1.5em;
+  margin-left: 0.5em;
+  padding: 0.2em;
+  font-size: 3em;
+  /* フォントサイズ */
+  font-weight: bold;
+  /* フォント太さ */
+  color: #00008b;
+  /* テキスト色 */
+  border: 3px solid #00bfff;
+  /* 下線：太さ 線の種類 色 */
+}
+
+/* line 79, /home/unicast/circlelink/app/assets/stylesheets/admins.scss */
+#admin h1:before,
+#admin h1:after {
+  content: '';
+  border-right: 18px solid #fff;
+  border-top: 15px solid #00bfff;
+  /* 吹き出し部分の線の色 */
+  bottom: -15px;
+  position: absolute;
+  left: 26px;
+}
+
+/* line 88, /home/unicast/circlelink/app/assets/stylesheets/admins.scss */
+#admin h1:after {
+  border-top-color: #fff;
+  border-right-color: transparent;
+  bottom: -11px;
+  left: 28px;
+}
+
+/* line 94, /home/unicast/circlelink/app/assets/stylesheets/admins.scss */
+#admin .textbox {
+  margin-left: 15px;
+}
+
+/* line 98, /home/unicast/circlelink/app/assets/stylesheets/admins.scss */
+#admin .index_pic {
+  float: left;
+  margin: 15px 100px 50px 20px;
+  border: solid 1px gray;
+}
+
+/* line 104, /home/unicast/circlelink/app/assets/stylesheets/admins.scss */
+#admin .contribution {
+  display: inline-block;
+  padding-bottom: 15px;
+  padding-top: 0px;
+}
+
+/* line 110, /home/unicast/circlelink/app/assets/stylesheets/admins.scss */
+#admin .new {
+  border: solid 2px gray;
+  width: 500px;
+  border-radius: 0.5em;
+  background-color: white;
+}
+
+/* line 117, /home/unicast/circlelink/app/assets/stylesheets/admins.scss */
+#admin_form #error_explanation {
+  margin-left: 30%;
+  width: 320px;
+}
+
+/* line 122, /home/unicast/circlelink/app/assets/stylesheets/admins.scss */
+#admin_form .title_form {
+  margin: 10px 0;
+}
+
+/* line 127, /home/unicast/circlelink/app/assets/stylesheets/admins.scss */
+#admin_form .msg_area {
+  margin-left: 20px;
+  width: 350px;
+}
+
+/* line 134, /home/unicast/circlelink/app/assets/stylesheets/admins.scss */
+#admin_form .form_area {
+  margin-left: 40%;
+}
+
+/* line 140, /home/unicast/circlelink/app/assets/stylesheets/admins.scss */
+.prof_text {
+  float: left;
+  width: 55%;
+}
+
+/* line 145, /home/unicast/circlelink/app/assets/stylesheets/admins.scss */
+.prof_text li {
+  font-size: 20px;
+  list-style: none;
+  float: left;
+  position: relative;
+  padding-right: 50px;
+}
+
+/* line 153, /home/unicast/circlelink/app/assets/stylesheets/admins.scss */
+.prof_text li::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  content: '';
+  width: 70%;
+  height: 7px;
+  background-color: #b6f0fc;
+}
+
+/* line 164, /home/unicast/circlelink/app/assets/stylesheets/admins.scss */
+.pfof_text p {
+  padding-left: 100px;
+}
+
+/* line 168, /home/unicast/circlelink/app/assets/stylesheets/admins.scss */
+.prof_text .active_day {
+  border: inset 1px blue;
+  width: 97%;
+}
+
+/* line 173, /home/unicast/circlelink/app/assets/stylesheets/admins.scss */
+#admin_prof .tweet_zone {
+  text-align: left;
+  margin-left: 52%;
+}
+
+/* line 178, /home/unicast/circlelink/app/assets/stylesheets/admins.scss */
+#admin_prof .tweet_zone li {
+  font-size: 20px;
+  list-style: none;
+  float: left;
+  position: relative;
+  padding-right: 50px;
+}
+
+/* line 186, /home/unicast/circlelink/app/assets/stylesheets/admins.scss */
+#admin_prof .tweet_zone li::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  content: '';
+  width: 70%;
+  height: 7px;
+  background-color: #b6f0fc;
+}
+
+/* line 197, /home/unicast/circlelink/app/assets/stylesheets/admins.scss */
+.prof_pic {
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* line 201, /home/unicast/circlelink/app/assets/stylesheets/admins.scss */
+.user_pic {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+/* line 206, /home/unicast/circlelink/app/assets/stylesheets/admins.scss */
+.button2 {
+  margin-top: 50px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+/* line 212, /home/unicast/circlelink/app/assets/stylesheets/admins.scss */
+.button3 {
+  padding: 15px;
+  width: 150px;
+  background-color: #333;
+  color: #fff;
+}
+
+/* line 218, /home/unicast/circlelink/app/assets/stylesheets/admins.scss */
+.button3:hover {
+  background-color: #59b1eb;
+}
+@charset "UTF-8";
+/* line 4, /home/unicast/circlelink/app/assets/stylesheets/homes.scss */
+#loader-bg {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  background: #000;
+  z-index: 1;
+}
+
+/* line 14, /home/unicast/circlelink/app/assets/stylesheets/homes.scss */
+#loader {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 200px;
+  height: 200px;
+  margin-top: -100px;
+  margin-left: -100px;
+  text-align: center;
+  color: #fff;
+  z-index: 2;
+}
+
+/* line 28, /home/unicast/circlelink/app/assets/stylesheets/homes.scss */
+#home {
+  background: #eef9ff;
+}
+
+/* line 32, /home/unicast/circlelink/app/assets/stylesheets/homes.scss */
+#home #msg {
+  display: block;
+  text-align: center;
+}
+
+/* line 37, /home/unicast/circlelink/app/assets/stylesheets/homes.scss */
+#home #msg h2 {
+  display: none;
+  font-size: 30px;
+  padding-top: 20px;
+}
+
+/* line 43, /home/unicast/circlelink/app/assets/stylesheets/homes.scss */
+#home #main_slide .slide_pic {
+  display: inline;
+  width: 100%;
+}
+
+/* line 48, /home/unicast/circlelink/app/assets/stylesheets/homes.scss */
+#home .list li {
+  margin-right: 15px;
+  list-style: none;
+  float: left;
+}
+
+/* line 53, /home/unicast/circlelink/app/assets/stylesheets/homes.scss */
+#home li {
+  list-style: none;
+}
+
+/* line 57, /home/unicast/circlelink/app/assets/stylesheets/homes.scss */
+#home h2 {
+  font-size: 20px;
+  margin-top: 0px;
+}
+
+/* line 63, /home/unicast/circlelink/app/assets/stylesheets/homes.scss */
+#home .new {
+  background: #eef9ff;
+  padding: 40px 0 60px;
+}
+
+/* line 69, /home/unicast/circlelink/app/assets/stylesheets/homes.scss */
+#home .new h2 {
+  display: inline;
+}
+
+/* line 73, /home/unicast/circlelink/app/assets/stylesheets/homes.scss */
+#home .new p {
+  display: inline-block;
+  margin-left: 320px;
+  width: auto;
+}
+
+/* line 79, /home/unicast/circlelink/app/assets/stylesheets/homes.scss */
+#home .topic {
+  width: 70%;
+  margin-left: 15px atuo;
+  background-color: white;
+  border: 2px solid gray;
+  border-radius: 0.5em;
+  display: inline-block;
+  box-shadow: 4px 4px 3px 0px rgba(0, 0, 0, 0.2);
+}
+
+/* line 89, /home/unicast/circlelink/app/assets/stylesheets/homes.scss */
+#home #show_all {
+  padding-bottom: 100px;
+}
+
+/* line 93, /home/unicast/circlelink/app/assets/stylesheets/homes.scss */
+#home #show_all .topic_all {
+  margin-left: auto;
+  margin-right: auto;
+  width: 450px;
+  background-color: white;
+  border: 2px solid gray;
+  border-radius: 0.5em;
+  text-align: center;
+}
+
+/* line 106, /home/unicast/circlelink/app/assets/stylesheets/homes.scss */
+#home .new p {
+  display: inline;
+}
+
+/* line 111, /home/unicast/circlelink/app/assets/stylesheets/homes.scss */
+#home .topic p {
+  margin-left: 160px;
+  text-align: center;
+}
+
+/* line 116, /home/unicast/circlelink/app/assets/stylesheets/homes.scss */
+#home .topic table {
+  text-align: center;
+  width: 100%;
+  table-layout: fixed;
+}
+
+/* line 123, /home/unicast/circlelink/app/assets/stylesheets/homes.scss */
+#home table tr th:nth-of-type(1) {
+  width: 25%;
+}
+
+/* line 126, /home/unicast/circlelink/app/assets/stylesheets/homes.scss */
+#home table td:nth-child(1) {
+  width: 20%;
+}
+
+/* line 130, /home/unicast/circlelink/app/assets/stylesheets/homes.scss */
+#home table tr th:nth-of-type(2) {
+  white-space: nowrap;
+  width: 35%;
+}
+
+/* line 134, /home/unicast/circlelink/app/assets/stylesheets/homes.scss */
+#home table td:nth-child(2) {
+  white-space: nowrap;
+  width: 35%;
+}
+
+/* line 139, /home/unicast/circlelink/app/assets/stylesheets/homes.scss */
+#home .find_circle {
+  padding: 40px 0 65px;
+  background: white;
+}
+
+/* line 143, /home/unicast/circlelink/app/assets/stylesheets/homes.scss */
+#home .find_circle .text_box {
+  text-align: center;
+  font-size: 20px;
+}
+
+/* line 147, /home/unicast/circlelink/app/assets/stylesheets/homes.scss */
+#home .find_circle .button {
+  box-shadow: 0px 4px 3px 0px rgba(0, 0, 0, 0.2);
+}
+
+/* line 151, /home/unicast/circlelink/app/assets/stylesheets/homes.scss */
+#home .neoneet_index {
+  height: 500px;
+  background-image: url("/images/neoneet_index.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-bottom: 80px;
+  padding: 40px 0 0;
+}
+
+/* line 159, /home/unicast/circlelink/app/assets/stylesheets/homes.scss */
+#home .neet_text {
+  color: white;
+  font-size: 20px;
+  margin: auto auto;
+}
+
+/* line 165, /home/unicast/circlelink/app/assets/stylesheets/homes.scss */
+#home .button {
+  background-color: #333;
+  color: #fff;
+}
+
+/* line 169, /home/unicast/circlelink/app/assets/stylesheets/homes.scss */
+#home .button:hover {
+  opacity: 0.5;
+}
+
+/* line 183, /home/unicast/circlelink/app/assets/stylesheets/homes.scss */
+#home #show_details {
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
+
+/* line 188, /home/unicast/circlelink/app/assets/stylesheets/homes.scss */
+#home #show_details h1 {
+  position: relative;
+  padding: .5em .75em;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin: 0px 180px;
+}
+
+/* line 199, /home/unicast/circlelink/app/assets/stylesheets/homes.scss */
+#home #show_details h1::before, h1::after {
+  position: absolute;
+  top: 100%;
+  left: 30px;
+  content: '';
+  height: 0;
+  width: 0;
+  border: 10px solid transparent;
+}
+
+/* line 208, /home/unicast/circlelink/app/assets/stylesheets/homes.scss */
+#home #show_details h1::before {
+  border-top: 15px solid #ccc;
+}
+
+/* line 212, /home/unicast/circlelink/app/assets/stylesheets/homes.scss */
+#home #show_details h1::after {
+  margin-top: -2px;
+  border-top: 15px solid #fff;
+}
+
+/* line 217, /home/unicast/circlelink/app/assets/stylesheets/homes.scss */
+#home #show_details h1:first-letter {
+  margin-right: .1em;
+  font-size: 1.5em;
+}
+
+/* line 222, /home/unicast/circlelink/app/assets/stylesheets/homes.scss */
+#home #show_details .image_zone {
+  margin: 25px 180px;
+}
+
+/* line 226, /home/unicast/circlelink/app/assets/stylesheets/homes.scss */
+#home #show_details .details_prof {
+  margin: 0px 180px;
+}
+
+/* line 230, /home/unicast/circlelink/app/assets/stylesheets/homes.scss */
+#home #show_details .details_prof ul, ol {
+  background: #fcfcfc;
+  /*背景色*/
+  padding: 0.5em 0.5em 0.5em 2em;
+  /*ボックス内の余白*/
+  border: double 8px #FFABCE;
+  /*線の種類 太さ 色*/
+}
+
+/* line 236, /home/unicast/circlelink/app/assets/stylesheets/homes.scss */
+#home #show_details .details_prof ul li {
+  color: #CC0033;
+  border-left: solid 6px #FF8856;
+  /*左側の線*/
+  border-bottom: solid 2px #dadada;
+  /*下に灰色線*/
+  background: #FFC7AF;
+  /*背景色*/
+  margin-bottom: 3px;
+  /*下のバーとの余白*/
+  line-height: 1.5;
+  /*文の行高*/
+  padding: 0.5em 0.5em;
+  /*前後の文との余白*/
+}
+
+/*slick関連*/
+/* line 247, /home/unicast/circlelink/app/assets/stylesheets/homes.scss */
+#home #main_slide {
+  text-align: center;
+}
+
+/* line 252, /home/unicast/circlelink/app/assets/stylesheets/homes.scss */
+#home #main_slide img {
+  width: 100%;
+}
+
+/* line 255, /home/unicast/circlelink/app/assets/stylesheets/homes.scss */
+#home .circle {
+  padding: 30px 0px;
+  background: url(/images/sakura2.gif);
+}
+
+/* line 261, /home/unicast/circlelink/app/assets/stylesheets/homes.scss */
+#home #check_button {
+  float: right;
+}
+
+/* line 264, /home/unicast/circlelink/app/assets/stylesheets/homes.scss */
+#home .submit {
+  float: right;
+  margin-left: 10px;
+}
+
+/* line 269, /home/unicast/circlelink/app/assets/stylesheets/homes.scss */
+#home .picture_box {
+  float: left;
+  padding-right: 10px;
+  width: 15%;
+  height: 70%;
+}
+
+/* line 276, /home/unicast/circlelink/app/assets/stylesheets/homes.scss */
+#home figure img {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
+}
+
+/* line 282, /home/unicast/circlelink/app/assets/stylesheets/homes.scss */
+#home figure:hover img {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+/* line 287, /home/unicast/circlelink/app/assets/stylesheets/homes.scss */
+#home .picture_box figcaption {
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* line 292, /home/unicast/circlelink/app/assets/stylesheets/homes.scss */
+#home .picture_size {
+  width: 185px;
+  height: 185px;
+  border: solid 1px gray;
+}
+
+/* line 298, /home/unicast/circlelink/app/assets/stylesheets/homes.scss */
+#home .after_check {
+  height: 350px;
+  background-image: url(/images/circle_back.jpg);
+  padding-bottom: 300px;
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-bottom: 15px;
+  margin-top: 50px;
+}
+
+/* line 308, /home/unicast/circlelink/app/assets/stylesheets/homes.scss */
+#home .after_check h1 {
+  position: relative;
+  margin: 30px -1px;
+  font: bold 30px/1.6 Arial, Helvetica, sans-serif;
+  text-align: center;
+  color: #333;
+  background: #f0e800;
+  -webkit-transform: rotate(-3deg) skew(-3deg);
+  -moz-transform: rotate(-3deg) skew(-3deg);
+  -o-transform: rotate(-3deg) skew(-3deg);
+  -ms-transform: rotate(-3deg) skew(-3deg);
+  transform: rotate(-3deg) skew(-3deg);
+  text-shadow: 1px 1px 0 white;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 30px 0 0 0 #f0e800, -30px 0 0 0 #f0e800;
+}
+
+/* line 326, /home/unicast/circlelink/app/assets/stylesheets/homes.scss */
+#home .after_check p {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+/* line 333, /home/unicast/circlelink/app/assets/stylesheets/homes.scss */
+#home .after_check .nocircle img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+/* line 340, /home/unicast/circlelink/app/assets/stylesheets/homes.scss */
+#home .pagenate_area {
+  text-align: center;
+  font-size: 20px;
+}
+
+/* line 345, /home/unicast/circlelink/app/assets/stylesheets/homes.scss */
+#home #transmission {
+  background-image: url(/images/show_back.jpg);
+  margin: 30px 30px 50px 30px;
+  padding-bottom: 50px;
+  padding-top: 20px;
+}
+
+/* line 352, /home/unicast/circlelink/app/assets/stylesheets/homes.scss */
+#home #transmission h1 {
+  background: linear-gradient(transparent 70%, #a7d6ff 70%);
+  margin-left: 15px;
+  margin-right: 80px;
+  padding-left: 10px;
+  margin-bottom: 50px;
+}
+
+/* line 360, /home/unicast/circlelink/app/assets/stylesheets/homes.scss */
+#home #transmission h3 {
+  margin-left: 50px;
+  font-size: 20px;
+}
+
+/* line 365, /home/unicast/circlelink/app/assets/stylesheets/homes.scss */
+#home #transmission p {
+  padding: 1em;
+  margin: 0px 60px 30px 10px;
+  border: 3px solid gray;
+  background-color: white;
+  border-radius: 3em .7em 2em .7em/.7em 2em .7em 3em;
+}
+@charset "UTF-8";
+/* line 4, /home/unicast/circlelink/app/assets/stylesheets/neets.scss */
+#neets {
+  margin-left: 15px;
+}
+
+/* line 8, /home/unicast/circlelink/app/assets/stylesheets/neets.scss */
+#neets h1 {
+  text-align: center;
+}
+
+/* line 11, /home/unicast/circlelink/app/assets/stylesheets/neets.scss */
+#neets .neet_list {
+  display: table-cell;
+  text-align: center;
+}
+
+/* line 16, /home/unicast/circlelink/app/assets/stylesheets/neets.scss */
+#neets .neet_list ul {
+  list-style: none;
+}
+
+/* line 20, /home/unicast/circlelink/app/assets/stylesheets/neets.scss */
+#neet_lists {
+  color: white;
+  background-color: #696969;
+  font-size: 11pt;
+  margin: 5px 10px;
+  text-align: center;
+}
+
+/* line 28, /home/unicast/circlelink/app/assets/stylesheets/neets.scss */
+#neet_lists p.base {
+  padding: 0.5em;
+  color: black;
+  background: #8b0000;
+  border-left: solid 7px #4d4d4d;
+  font-size: 15pt;
+}
+
+/* line 35, /home/unicast/circlelink/app/assets/stylesheets/neets.scss */
+#neet_lists p.name {
+  zoom: 150%;
+  font-family: "ＭＳ Ｐ明朝","ＭＳ 明朝",serif;
+}
+
+/* line 39, /home/unicast/circlelink/app/assets/stylesheets/neets.scss */
+#neet_lists div.top_pic img {
+  display: block;
+  width: 50%;
+  margin: 0 auto;
+  border-radius: 50%;
+}
+
+/* line 47, /home/unicast/circlelink/app/assets/stylesheets/neets.scss */
+#neet_lists .menu ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 51, /home/unicast/circlelink/app/assets/stylesheets/neets.scss */
+#neet_lists .menu ul li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  float: left;
+  position: relative;
+  width: 33%;
+  /*親メニューの幅*/
+  height: 40px;
+  /*親メニューの高さ*/
+  line-height: 40px;
+  background: #000000;
+  /*親メニューの背景色*/
+  color: #FFFFFF;
+  /*親メニューの文字色*/
+  text-align: center;
+  font-weight: bold;
+}
+
+/* line 66, /home/unicast/circlelink/app/assets/stylesheets/neets.scss */
+#neet_lists .menu ul li a {
+  color: #dc143c;
+  display: block;
+  text-decoration: none;
+}
+
+/* line 71, /home/unicast/circlelink/app/assets/stylesheets/neets.scss */
+#neet_lists .menu ul li:hover, .menu ul li a:hover {
+  background: #4d4d4d;
+  /*ホバー時の親メニューの背景色*/
+  color: #a9a9a9;
+  /*ホバー時の親メニューの文字色*/
+}
+
+/* line 75, /home/unicast/circlelink/app/assets/stylesheets/neets.scss */
+#neet_lists .menu ul li ul {
+  position: absolute;
+  top: 40px;
+  /*親メニューの高さと同じにする*/
+  width: 100%;
+  z-index: 100;
+}
+
+/* line 81, /home/unicast/circlelink/app/assets/stylesheets/neets.scss */
+#neet_lists .menu ul li ul li {
+  visibility: hidden;
+  overflow: hidden;
+  width: 100%;
+  /*サブメニューの幅*/
+  height: 0;
+  background: #c0c0c0;
+  /*サブメニューの背景色*/
+}
+
+/* line 88, /home/unicast/circlelink/app/assets/stylesheets/neets.scss */
+#neet_lists .menu ul li ul li:hover, .menu ul li ul li a:hover {
+  background: #c0c0c0;
+  /*ホバー時のサブメニューの背景色*/
+  color: #000;
+  /*ホバー時の親メニューの文字色*/
+}
+
+/* line 92, /home/unicast/circlelink/app/assets/stylesheets/neets.scss */
+#neet_lists .menu ul li:hover ul li, .menu ul li a:hover ul li {
+  visibility: visible;
+  overflow: visible;
+  height: 40px;
+  /*サブメニューの高さ*/
+  z-index: 100;
+}
+
+/* line 98, /home/unicast/circlelink/app/assets/stylesheets/neets.scss */
+#neet_lists .menu * {
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+/* line 107, /home/unicast/circlelink/app/assets/stylesheets/neets.scss */
+#neet_lists .neet_list {
+  display: block;
+  border:  1px solid  #FF0000;
+  margin: 0 auto;
+}
+
+/* line 114, /home/unicast/circlelink/app/assets/stylesheets/neets.scss */
+#neet_lists figure img {
+  -webkit-filter: blur(3px);
+  filter: blur(3px);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+/* line 120, /home/unicast/circlelink/app/assets/stylesheets/neets.scss */
+#neet_lists figure:hover img {
+  -webkit-filter: blur(0);
+  filter: blur(0);
+}
+
+/* line 125, /home/unicast/circlelink/app/assets/stylesheets/neets.scss */
+#bbb h1 {
+  position: relative;
+  padding: 5px 26px 5px 30px;
+  background: #fff0d9;
+  color: #2d2d2d;
+  margin-left: 33px;
+  line-height: 1.3;
+  border-bottom: solid 3px orange;
+  z-index: -2;
+  text-align: center;
+  color: #FFB6C1;
+}
+
+/* line 139, /home/unicast/circlelink/app/assets/stylesheets/neets.scss */
+#bbb p {
+  position: relative;
+  background: #fcfcfc;
+  font-size: 16pt;
+  border: 3px solid #ff6347;
+  margin: 10px 280px 23px 50px;
+  padding: 10px 5px 10px 10px;
+  border-radius: 3px;
+  box-shadow: 1px 3px 7px 0px #666666;
+}
+
+/* line 150, /home/unicast/circlelink/app/assets/stylesheets/neets.scss */
+#bbb p:after, #bbb p:before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  height: 0;
+  width: 0;
+}
+
+/* line 157, /home/unicast/circlelink/app/assets/stylesheets/neets.scss */
+#bbb p:after {
+  left: 40px;
+  border: 10px solid transparent;
+  border-top: 10px solid #fcfcfc;
+}
+
+/* line 162, /home/unicast/circlelink/app/assets/stylesheets/neets.scss */
+#bbb p:before {
+  left: 37px;
+  border: 13px solid transparent;
+  border-top: 13px solid #ff6347;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+
+
+ #home{
+ /*margin-left:15px;*/
+ /*background: url(/images/sakura2.gif);*/
+ }
+ #home #msg{
+   display: block;
+   text-align: center;
+ }
+
+ #home #msg h2{
+   display: none;
+   color:#CC99CC;
+ }
+
+ #error_explanation{
+   width: 600px;
+   color: red;
+    background-color: #FFCCCC;
+    style:table;
+ }
+
+ body{
+   width: 1000px;
+   margin: 0px;
+   /*width:100%;*/
+ }
+ #header{
+   height :145px;
+   background-image: url(/images/header_footer1.jpg);
+    border-bottom: 1px solid gray;
+    margin-bottom: 0px;
+ }
+#header .logo_space {
+  margin: 25px 30px;
+  padding: 5px 10px;
+  line-height: 100px;
+  display: inline-block;
+  border:1px solid white;
+  border-radius: 50px;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+  background: white;
+   box-shadow:0px 0px 5px 3px rgba(0, 0, 0, 0.2) inset;
+}
+
+#menu ul{
+  background: linear-gradient(to bottom,#ffffff, #dcdcdc);
+  height: 55px;
+  margin:0;
+  font-size: 0px;
+  padding-left: 0;
+  padding: 10px 0;
+}
+#menu ul a{
+  display: block;
+  color: #708090;
+  font-family: 'Lato', helvetica, arial, sans-serif;
+}
+#menu ul a:hover{
+  color: #00bfff;
+}
+
+
+#menu li{
+  box-sizing: border-box;
+  font-size: 20px;
+  line-height: 55px;
+  display: inline-block;
+  list-style: none;
+  width: 25%;
+  text-align: center;
+}
+#menu li+li{
+  border-left:2px solid #999;
+}
+
+
+/*#header .button {
+    width:150px;
+    font-size:15px;
+    font-weight:bold;
+    text-decoration:none;
+    display:block;
+    text-align:center;
+    padding:8px 0 10px;
+    color:#fff;
+    background-color:#49a9d4;
+    border-radius:10px;
+}
+#header .button:hover {
+	background-color: white;
+  border: 2px solid #49a9d4;
+  border-radius:10px;
+  color:#49a9d4;
+}*/
+
+#header .home{
+  width:700px;
+ position: relative;
+ margin-left: 15px;
+ padding-bottom: 50px;
+ height: auto;
+}
+
+#main{
+  width: 700px;
+  margin-left:15px;
+}
+
+#hutter{
+  border-top:1px solid gray;
+  height: 150px;
+  clear:left;
+  background-image: url(/images/header_footer1.jpg);
+}
+#hutter .login{
+  margin-top:10px;
+  padding-left: 70px;
+  list-style: none;
+}
+#hutter .login li{
+  float: left;
+  padding:0px 5px;
+
+}
+#hutter .login_text{
+  color: white;
+}
+#hutter .logo_space{
+  display: block;
+  width:200px;
+  padding:5px 10px;
+  margin: 25px 35px 20px auto;
+  border:1px solid white;
+  border-radius: 50px;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+  background: white;
+   box-shadow:0px 0px 5px 3px rgba(0, 0, 0, 0.2) inset;
+}

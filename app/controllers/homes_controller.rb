@@ -34,4 +34,8 @@ class HomesController < ApplicationController
     @msg = relation.page(params[:page]).per(8)
   end
 
+  def neets_list
+
+  end
+
 end
